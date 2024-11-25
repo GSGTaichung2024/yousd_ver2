@@ -1,0 +1,107 @@
+#page-header .menu
+	position: relative
+	+reset-ul
+	margin: 0 -1em
+	> li
+		display: inline-block
+		&:not(:last-child)
+			margin-right: 1em
+		a
+			display: block
+			padding: 0.5em 1em
+	.menu-item-has-children
+		position: relative
+		> a
+			&:hover
+				~ ul
+					opacity: 1
+					visibility: visible
+					transform: translate(0px, 0px)
+					z-index: 50
+	> li > a
+			background-image: linear-gradient(currentColor, currentColor)
+			background-position: calc(100% - 1em) calc(100% - 0.25em)
+			background-repeat: no-repeat
+			background-size: 0% 2px
+			transition: background-size .4s ease, color 0.2s ease-in-out
+			&:hover
+				background-position: 1em calc(100% - 0.25em)
+				background-size: calc(100% - 2em) 2px
+	> li.current-menu-item
+		> a
+			background-size: calc(100% - 2em) 2px
+			background-position: 1em calc(100% - 0.25em)
+	> li.current-menu-ancestor
+		> a
+			background-position: 1em calc(100% - 0.25em)
+			background-size: calc(100% - 2em) 2px
+		.sub-menu li.current-menu-ancestor > a
+			background-color: #fafafa
+		.sub-menu li.current-menu-item > a
+			background-color: #fafafa
+			color: var(--color-dark-2)
+
+.menu_hover
+	> li > a:not(:hover)
+		background-position: calc(100% - 1em) calc(100% - 0.25em)
+		// background-size: 0% 2px
+		background-size: 0% 2px
+		// background-size: calc(100% - 2em) 2px
+	> li.current-menu-item
+		> a
+			background-position: calc(100% - 1em) calc(100% - 0.25em)
+			background-size: 0% 2px
+	> li.current-menu-ancestor
+		> a
+			background-position: calc(100% - 1em) calc(100% - 0.25em)
+			background-size: 0% 2px
+.menu.menu_disabled
+	pointer-events: none !important
+	*
+		pointer-events: none !important
+	.sub-menu
+		opacity: 0 !important
+		visibility: hidden !important
+		transform: translate(0px, 1em) !important
+.menu
+	.sub-menu
+		position: absolute
+		top: 100%
+		left: 1em
+		transform: translate(0px, 1em)
+		+reset-ul
+		opacity: 0
+		visibility: hidden
+		+trans1
+		z-index: -1
+		background-color: #fff
+		border-radius: 2px
+		text-align: left
+		box-shadow: 0px 0px 30px 0px rgba(24, 24, 24, 0.04)
+		&:hover
+			opacity: 1
+			visibility: visible
+			transform: translate(0, 0)
+			z-index: 50
+		> li
+			white-space: nowrap
+			a
+				padding: 0.5em 1em
+				background-color: transparent
+				border-left: 2px solid transparent
+				&:hover
+					background-color: #fafafa
+					border-color: var(--color-dark-2)
+					color: var(--color-dark-2)
+		ul
+			top: 0
+			left: calc(100% + 1px)
+			transform: translate(0.5em, 0)
+			opacity: 0
+			visibility: hidden
+
+@media screen and (max-width: $xl)
+	.menu
+		> li
+			&:not(:last-child)
+				margin-right: 0.25em

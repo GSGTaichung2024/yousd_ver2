@@ -1,0 +1,323 @@
+.header
+	pointer-events: none
+	padding-top: calc(var(--gutter-vertical) / 1.5)
+	a, select, input
+		pointer-events: initial
+	&:not(.opened)
+		.header__label-burger_closed-hover, .header__label-burger_opened-open, .header__label-burger_opened-hover
+			transform: translateY(100%)
+			opacity: 0
+		.header__burger
+			&:hover
+				.header__label-burger_closed-open
+					transform: translateY(-100%)
+					opacity: 0
+				.header__label-burger_closed-hover
+					transform: translateY(0%)
+					opacity: 1
+	&.opened
+		.header__label-burger_closed-open, .header__label-burger_closed-hover, .header__label-burger_opened-hover
+			transform: translateY(100%)
+			opacity: 0
+		.header__burger
+			&:hover
+				.header__label-burger_opened-open
+					transform: translateY(-100%)
+					opacity: 0
+				.header__label-burger_opened-hover
+					transform: translateY(0%)
+					opacity: 1
+.cursorfollower
+	.header__overlay-menu-back
+		&[data-arts-cursor]
+			.header__label
+				pointer-events: none !important
+				transition: all 0.3s ease !important
+			&:hover
+				.header__label_status
+					transform: translate(25px, -100%)
+					opacity: 0
+				.header__label_opened-back
+					transform: translate(25px, -50%)
+					opacity: 1
+	.header__burger
+		&[data-arts-cursor]
+			.header__burger-label
+				pointer-events: none !important
+			&:hover
+				.header__burger-label
+					transform: translate(-30px, -50%)
+.header__controls
+	pointer-events: none
+.header_absolute
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 500
+.header_fixed
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	z-index: 500
+.header__container
+	padding-left: 0
+	padding-right: 0
+	position: relative
+	z-index: 501
+.header_menu-hidden
+	.header__burger
+		opacity: 0
+		visibility: hidden
+.header__burger
+	display: inline-flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	position: relative
+	width: 50px
+	height: 50px
+	vertical-align: middle
+	cursor: pointer
+	pointer-events: initial
+	z-index: 500
+	margin-right: -12px
+	&:hover
+		.header__burger-line
+			&:before
+				transform: translateX(100%)
+			&:after
+				transform: translateX(0%)
+.header__burger-label
+	display: inline-block
+	height: 14px
+	position: absolute
+	top: 50%
+	right: 100%
+	transform: translate(0, -50%)
+	text-align: right
+	transition: all 0.3s ease !important
+	// &:after
+	// 	content: attr(data-arts-burger-label-close)
+.header__label-burger_inner
+	position: absolute
+	top: 0
+	right: 0
+	transition: transform 0.3s ease 0s, opacity 0.3s ease 0s,
+
+.header__burger-line
+	// position: absolute
+	position: relative
+	width: 26px
+	height: 2px
+	// left: 0
+	// right: 0
+	margin-top: 2px
+	margin-bottom: 2px
+	margin-left: auto
+	margin-right: auto
+	overflow: hidden
+	// background-color: var(--color-dark-2)
+	// background-color: #fff
+	+trans2
+	&:nth-of-type(1)
+		&:before, &:after
+			transition-delay: 0ms
+	&:nth-of-type(2)
+		&:before, &:after
+			transition-delay: 50ms
+	&:nth-of-type(3)
+		&:before, &:after
+			transition-delay: 100ms
+	// > &:first-of-type
+	// 	margin-top: auto
+	// 	margin-bottom: 2px
+	// > &:last-of-type
+	// 	margin-top: 2px
+	// 	margin-bottom: auto
+	&:before
+		content: ''
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		transform: translateX(0%)
+		background-color: var(--color-dark-2)
+		transition: all 0.3s ease
+	&:after
+		content: ''
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		transform: translateX(calc(-100% - 4px))
+		background-color: var(--color-dark-2)
+		transition: all 0.5s ease
+.header__burger_opened, .header__burger_opened:hover
+	.header__burger-line
+		&:nth-of-type(1)
+			transform: scaleX(1) rotate(45deg) translate(2px, 2px)
+		&:nth-of-type(2)
+			transform: scaleX(1) rotate(-45deg) translate(2px, -2px)
+		&:nth-of-type(3)
+			transform-origin: right center
+			transform: scaleX(0)
+.header__wrapper-overlay-menu
+	position: fixed
+	top: 0
+	left: 0
+	width: 100vw
+	height: 100vh
+	z-index: 500
+	overflow: hidden
+	opacity: 0
+	visibility: hidden
+.header__label
+	white-space: nowrap
+	transition: color 0.3s ease
+	font-size: 14px
+	line-height: 0.9
+	font-weight: 500
+.header__label_status
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	left: calc(100% + 2px)
+	transition: all 0.3s ease
+.header__label_opened-back
+	position: absolute
+	top: 50%
+	transform: translate(0%, 100%)
+	left: calc(100% + 2px)
+	opacity: 0
+	transition: all 0.3s ease
+.header__label_side
+	position: absolute
+	top: 50%
+	left: 0
+	padding-left: 0
+	padding-right: 0
+	transform: translateY(-50%)
+.header__wrapper-overlay-widgets
+	.widget
+		margin-bottom: 0
+.header__wrapper-menu
+	position: relative
+	margin-top: auto
+	margin-bottom: auto
+	padding: calc(var(--gutter-vertical) * 1.5) var(--gutter-horizontal)
+	width: 100%
+	height: 100%
+	display: flex !important
+	flex-direction: column
+	overflow-x: hidden
+	overflow-y: auto
+	-webkit-overflow-scrolling: touch
+	.scroll-content
+		height: 100%
+		width: 100%
+		display: flex !important
+		flex-direction: column
+.header__wrapper-slider
+	padding-left: var(--gutter-horizontal)
+	padding-right: var(--gutter-horizontal)
+	height: 100%
+	display: flex
+	flex-direction: column
+	overflow: hidden
+	pointer-events: auto !important
+.header__overlay-menu-back
+	display: inline-flex
+	align-items: center
+	justify-content: center
+	position: absolute
+	top: 0
+	bottom: 0
+	margin: auto 0
+	width: 50px
+	height: 50px
+	left: calc(41.666667% + var(--gutter-horizontal) - 20px)
+	cursor: pointer
+	opacity: 0
+	visibility: hidden
+	pointer-events: initial
+	z-index: 50
+	transition: color 0.3s ease
+	i
+		font-size: 32px !important
+	&:hover
+		.header__label_status
+			transform: translate(0%, -100%)
+			opacity: 0
+		.header__label_opened-back
+			transform: translate(0%, -50%)
+			opacity: 1
+.header__overlay-menu-info
+	opacity: 0
+	visibility: hidden
+.header_menu-right
+	.menu
+		.sub-menu
+			left: auto
+			right: 1em
+			ul
+				left: auto
+				right: calc(100% + 1px)
+.header_menu-split-center
+	.header__col-right
+		.menu
+			.sub-menu
+				left: auto
+				right: 1em
+				ul
+					left: auto
+					right: calc(100% + 1px)
+
+.header__menu-gradient
+	display: block
+	position: absolute
+	left: 0
+	right: 0
+	z-index: 60
+.header__menu-gradient_top
+	top: 0
+	height: calc(var(--gutter-vertical) * 2)
+.header__menu-gradient_bottom
+	bottom: 0
+	height: calc(var(--gutter-vertical))
+.header__scroll-container
+	width: 100%
+	height: 100%
+	display: flex !important
+	.scroll-content
+		width: 100%
+		margin-top: auto
+		margin-bottom: auto
+
+@media screen and (max-width: $md)
+	.header__burger
+		width: 32px
+		height: 32px
+		margin-right: -3px
+		margin-left: 3px
+	.header__burger-label
+		margin-right: 6px
+	.header__wrapper-menu
+		margin-top: 0
+		padding-top: 5em
+		padding-bottom: 5em
+	.header__overlay-menu-info
+		display: none
+	.header__overlay-menu-back
+		left: calc(var(--gutter-horizontal) * -1)
+	.header__wrapper-slider
+		padding-top: 1.5em
+		padding-bottom: 5em
+		border-top: 1px solid $color-border-dark
+	.header__menu-gradient_top
+		height: calc(var(--gutter-vertical) * 3)
+	.header__menu-gradient_bottom
+		height: calc(var(--gutter-vertical) * 3)

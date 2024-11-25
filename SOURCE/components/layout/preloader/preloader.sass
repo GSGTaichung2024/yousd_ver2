@@ -1,0 +1,63 @@
+.preloader
+	display: flex
+	align-items: center
+	justify-content: center
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 400
+	overflow: hidden
+.preloader_header-hidden
+	+ #page-header
+		transition: opacity 0.3s ease
+	&:not(.preloader_ended)
+		+ #page-header
+			opacity: 0
+			visibility: hidden
+			transform: translateY(50px)
+.preloader_header-menu-hidden
+	+ #page-header
+		.menu, .header__burger
+			transition: opacity 0.3s ease
+	&:not(.preloader_ended)
+		+ #page-header
+			.menu, .header__burger
+				opacity: 0
+				visibility: hidden
+.preloader:not(.preloader_ended) + #page-header
+	pointer-events: none !important
+	*
+		pointer-events: none !important
+.preloader__wrapper
+	display: flex
+	flex-wrap: wrap
+	position: fixed
+	top: var(--gutter-vertical, 120px)
+	left: var(--gutter-horizontal, 120px)
+	right: var(--gutter-horizontal, 120px)
+	bottom: calc(var(--fix-bar-vh, 30px) + var(--gutter-vertical, 100px))
+.preloader__counter
+	font-family: var(--font-primary)
+	font-weight: 100
+	line-height: 1
+	@include fluid-type(96, 212)
+	letter-spacing: -10px
+	// opacity: 0
+	white-space: nowrap
+.underline
+	&.preloader__counter_started
+		animation-name: loading
+		animation-duration: 20s
+		transition: background-size 1.2s ease
+	&.preloader__counter_paused
+		animation-play-state: paused
+	&.preloader__counter_ended
+		animation-duration: 1s
+
+@keyframes loading
+	0%
+		background-size: 0% 2px
+	100%
+		background-size: 100% 2px

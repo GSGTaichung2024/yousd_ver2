@@ -1,0 +1,31 @@
+.background-hover
+	position: relative
+	display: block
+	&:hover
+		*, *:after, *:before
+			color: #fff !important
+		a
+			opacity: 0.9
+			&:hover
+				opacity: 1
+		.background-hover__image
+			opacity: 1
+		.background-hover__overlay
+			opacity: 1
+	.background-hover__overlay
+		opacity: 0
+		+trans1
+.background-hover__image
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	opacity: .01
+	+trans1
+.background-hover__content
+	position: relative
+	z-index: 50
+	transform: translateZ(0) // prevent flickering in Safari
+.background-hover__overlay
+	z-index: 10 !important

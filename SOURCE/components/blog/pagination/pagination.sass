@@ -1,0 +1,57 @@
+.pagination
+	border-top: 2px solid $color-border-dark
+	padding: 10px 0 0
+	font-weight: 500
+	.nav-links
+		display: flex
+		justify-content: space-between
+		align-items: center
+	.nav-links__container
+		margin-left: auto
+		margin-right: auto
+	.page-numbers
+		display: inline-block
+		line-height: 1
+		padding: 12px 20px
+		background-image: none
+		vertical-align: middle
+		transition-property: color
+		&.prev
+			font-size: 24px
+			font-weight: normal
+			margin-left: -20px
+		&.next
+			font-size: 24px
+			font-weight: normal
+			margin-right: -20px
+		&:not(a)
+			color: $color-dark-4
+		&.current
+			color: $color-dark-4
+.page-links
+	border-top: 2px solid $color-border-dark
+	padding: 10px 0 0
+	.page-number
+		display: inline-block
+		line-height: 1
+		font-weight: 600
+		padding: 0 15px
+		border: none
+	.post-page-numbers
+		&:not(a)
+			color: $color-dark-4
+
+.comments-pagination
+	text-align: center
+	.page-numbers
+		display: inline-block
+		line-height: 1
+		font-weight: 600
+		padding: 0 10px
+		transition-property: color
+
+@media screen and (max-width: $md)
+	.pagination
+		padding: 8px 0 0
+	.page-links
+		padding: 8px 0 0

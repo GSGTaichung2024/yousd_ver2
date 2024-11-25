@@ -1,0 +1,46 @@
+.widget
+	margin-bottom: 2em
+	font-size: 16px
+	p
+		font-size: 16px
+	select
+		width: 100%
+		max-width: 100%
+	ul
+		+reset-ul
+		text-align: left
+		li
+			display: block
+			margin-bottom: 0.5em
+			&:last-child
+				margin-bottom: 0
+		ul
+			width: 100%
+			padding-left: 1em
+			margin-top: 1em
+		.sub-menu
+			padding-left: 1em
+			margin-top: 1em
+.widget:not(.widget_kinsey_cta)
+	p
+		&:last-of-type
+			margin-bottom: 0
+.widgettitle
+	display: block
+	font-size: 16px
+	font-weight: 500
+	color: $color-dark-1
+	line-height: var(--paragraph-line-height)
+	margin-top: 0
+	margin-bottom: 1em
+	&:after
+		content: ''
+		display: block
+		width: 100%
+		height: 2px
+		background-color: $color-dark-1
+		margin-bottom: 0.5em
+.widget-area_no-margin-last-widget
+	> *
+		&:last-child
+			margin-bottom: 0

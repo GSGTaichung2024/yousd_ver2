@@ -1,0 +1,65 @@
+.list-dots
+	+reset-ul
+	li
+		display: inline-block
+		vertical-align: middle
+		margin-top: 0.5em
+	li:not(:last-child)
+		&:after
+			content: ''
+			display: inline-block
+			width: 3px
+			height: 3px
+			border-radius: 50%
+			background-color: $color-gray-2
+			vertical-align: middle
+			margin-left: 2.5em
+			margin-right: 2.5em
+			+trans1(transform)
+
+@media screen and (max-width: $md)
+	.list-dots
+		li
+			display: block
+		li:first-child
+			margin-top: 0
+		li:not(:last-child)
+			&:after
+				margin-left: auto
+				margin-right: auto
+				display: block
+				margin-top: 1em
+				margin-bottom: 1em
+	// .list-dots:not([data-arts-os-animation])
+	//   li:not(:last-child)
+	//       &:after
+	//         content: ''
+	//         display: inline-block
+	//         width: 3px
+	//         height: 3px
+	//         border-radius: 50%
+	//         background-color: $color-gray-2
+	//         vertical-align: middle
+	//         margin-left: 2.5em
+	//         margin-right: 2.5em
+	// .list-dots[data-arts-os-animation]
+	//   li:not(:last-child)
+	//     > div
+	//       &:after
+	//         content: ''
+	//         display: inline-block
+	//         width: 3px
+	//         height: 3px
+	//         border-radius: 50%
+	//         background-color: $color-gray-2
+	//         vertical-align: middle
+	//         margin-left: 2.5em
+	//         margin-right: 2.5em
+	//         transform: scale(0)
+	//         transition: transform 0.3s ease
+	//         transition-delay: 0.3s
+	// .list-dots[data-arts-os-animation="animated"]
+	//   li:not(:last-child)
+	//     > div
+	//       &:after
+	//         transform: scale(1)

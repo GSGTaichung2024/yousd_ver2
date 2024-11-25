@@ -1,0 +1,51 @@
+.section-nav-projects
+	flex-wrap: wrap
+	// overflow: hidden
+.section-nav-projects__next-image
+	width: 100%
+	height: 30vh
+	.lazy-wrapper
+		max-width: 100% !important
+		height: 100%
+	.lazy
+		display: inline-block
+		width: auto
+		// width: 100%
+		height: 100% !important
+		padding-bottom: 0 !important
+		img
+			position: relative !important
+			width: auto
+			height: 100%
+	.js-transition-img__transformed-el
+		width: 100%
+		height: 100%
+.section-nav-projects__header
+	cursor: pointer
+.section-nav-projects__next-image
+	cursor: pointer
+.section-nav-projects__link
+	display: block
+.section-nav-projects__subheading
+	position: relative
+.section-nav-projects__label_scroll
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	transform: translateY(100%)
+	opacity: 0
+	visibility: hidden
+.section-nav-projects__label
+	display: inline-block
+.section-nav-projects__inner
+	// height: 100vh
+	height: calc(var(--fix-bar-vh, 1vh) * 100)
+.section-nav-projects__spacer
+	width: 100%
+	// height: 33vh
+	height: calc(var(--fix-bar-vh, 1vh) * 33)
+
+@media screen and (max-width: $sm)
+	.section-nav-projects__inner
+		height: auto

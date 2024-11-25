@@ -1,0 +1,41 @@
+.arts-cursor
+	color: #f27461
+	display: none
+.arts-cursor__stroke-inner, .arts-cursor__stroke-outer
+	stroke-width: 2px
+	stroke: #ed4830
+.arts-cursor__label
+	font-size: 14px
+	font-weight: bold
+	letter-spacing: 0
+.cursor-progress
+	cursor: progress !important
+	*
+		cursor: progress !important
+.cursor-none
+	cursor: none !important
+	*
+		cursor: none !important
+.is-dragging
+	cursor: none !important
+	*
+		cursor: none !important
+	.is-dragging__blocker
+		visibility: visible
+		opacity: 1
+		z-index: 100
+.is-dragging__blocker
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: -1
+	opacity: 0
+	visibility: hidden
+	transition: all 0.2s ease
+	transition-delay: 0.2s
+
+// .arts-cursor-none
+// 	[data-arts-cursor]
+// 		pointer-events: none !important

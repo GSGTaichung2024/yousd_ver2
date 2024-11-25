@@ -1,0 +1,22 @@
+[data-arts-header-logo="primary"], .preloader[data-arts-preloader-logo="primary"]:not(.preloader_ended) + #page-header
+	.logo__img-primary
+		opacity: 1
+		visibility: visible
+	.logo__img-secondary
+		opacity: 0
+		visibility: hidden
+	.logo__text-title
+		color: var(--paragraph-color-dark) !important
+	.logo__text-tagline
+		color: $color-gray-2 !important
+[data-arts-header-logo="secondary"], .preloader[data-arts-preloader-logo="secondary"]:not(.preloader_ended) + #page-header
+	.logo__img-primary
+		opacity: 0
+		visibility: hidden
+	.logo__img-secondary
+		opacity: 1
+		visibility: visible
+	.logo__text-title
+		color: #fff !important
+	.logo__text-tagline
+		color: $color-gray-2 !important

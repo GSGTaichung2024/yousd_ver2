@@ -1,0 +1,46 @@
+.post__tags
+	border-top: 1px solid $color-border-dark
+	margin-top: 2em
+	padding-top: 2em
+.post__content, .post__comments, .section-content__heading, .section-content__text, .content
+	> *:first-child:not(.section__headline)
+		margin-top: 0
+	> *:last-child:not(.section__headline)
+		margin-bottom: 0
+	ul
+		+reset-ul
+		margin-bottom: 1.5em
+		li
+			display: block
+			margin-top: 1em
+			margin-bottom: 1em
+		ul, ol
+			padding-left: 1em
+	ul:not(.wp-block-gallery)
+		padding-left: 1.5em
+		li
+			&:before
+				content: ''
+				display: inline-block
+				width: 1em
+				height: 2px
+				vertical-align: middle
+				margin-right: 0.5em
+				// margin-bottom: 3px
+				background-color: var(--color-gray-1)
+			> span // split text wrapper
+				vertical-align: top !important
+	ol:not(.comment-list)
+		margin-bottom: 24px
+		padding-left: 1.25em
+		li
+			display: list-item
+			margin-top: 0.75em
+			margin-bottom: 0.75em
+			> span // split text wrapper
+				vertical-align: top !important
+		ul, ol
+			padding-left: 1.25em
+.post__content, .comment-content, .section-content__heading, .section-content__text
+	> ul
+		padding-left: 0 !important

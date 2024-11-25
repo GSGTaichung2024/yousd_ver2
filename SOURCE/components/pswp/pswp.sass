@@ -1,0 +1,55 @@
+.pswp__button
+	outline: none
+	&:focus
+		outline: none
+.pswp__button--arrow--left, .pswp__button--arrow--right
+	display: inline-flex
+	justify-content: center
+	align-items: center
+	width: 40px
+	height: 40px
+	opacity: 1
+	&:before
+		display: none
+.pswp__button--arrow--left
+	left: 20px
+.pswp__button--arrow--right
+	right: 20px
+.pswp__top-bar
+	padding: 15px 15px 0
+.pswp__counter
+	left: 25px
+	top: 15px
+.pswp__wrapper-embed
+	display: flex
+	align-items: center
+	justify-content: center
+	width: 100%
+	height: 100%
+	padding: 120px
+	iframe
+		width: 100%
+		height: 100%
+	video
+		width: 100%
+		height: auto
+
+@media screen and (max-width: $md)
+	.pswp__counter
+		top: 0px
+		left: 10px
+	.pswp__top-bar
+		padding: 0
+	.pswp__button--arrow--left, .pswp__button--arrow--right
+		width: auto
+		height: auto
+		margin-top: 0
+	.pswp__button--arrow--left
+		left: 15px
+	.pswp__button--arrow--right
+		right: 15px
+	.pswp__wrapper-embed
+		padding: 120px 40px
+		iframe
+			width: 100%
+			height: 100%

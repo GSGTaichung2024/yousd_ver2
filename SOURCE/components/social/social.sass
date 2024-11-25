@@ -1,0 +1,23 @@
+.social
+	display: inline-block
+	+reset-ul
+	.social__item
+		display: inline-block
+		transition: none
+		margin-bottom: 0
+		a
+			display: flex !important
+			align-items: center
+			justify-content: center
+			width: 40px
+			height: 40px
+			font-size: 14px
+			border-radius: 50%
+			// border: 1px solid $color-border-dark
+
+@media screen and (max-width: $md)
+	.social
+		.social__item
+			a
+				width: 30px
+				height: 30px

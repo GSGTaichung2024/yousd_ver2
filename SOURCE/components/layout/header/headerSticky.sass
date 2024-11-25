@@ -1,0 +1,44 @@
+.js-header-sticky
+	transition-property: padding-top, padding-bottom, box-shadow, background-color
+	transition-duration: 0.4s
+	transition-timing-function: ease
+	box-shadow: 0px 0px 30px 0px rgba(24, 24, 24, 0)
+	will-change: padding-top, padding-bottom, box-shadow, background-color
+	&:not(.header_sticky)
+		background-color: unset
+.header_sticky
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	padding-top: 15px
+	padding-bottom: 15px
+	box-shadow: 0px 0px 30px 0px rgba(24, 24, 24, 0.05)
+	&[data-arts-header-sticky-logo="primary"]
+		.logo__img-primary
+			opacity: 1
+			visibility: visible
+		.logo__img-secondary
+			opacity: 0
+			visibility: hidden
+		.logo__text-title
+			color: var(--paragraph-color-dark) !important
+		.logo__text-tagline
+			color: var(--color-gray-1) !important
+	&[data-arts-header-sticky-logo="secondary"]
+		.logo__img-primary
+			opacity: 0
+			visibility: hidden
+		.logo__img-secondary
+			opacity: 1
+			visibility: visible
+		.logo__text-title
+			color: #fff !important
+		.logo__text-tagline
+			color: var(--color-gray-2) !important
+	&.bg-dark-1, &.bg-dark-2, &.bg-dark-3, &.bg-dark-4
+		.menu > li > a
+			&:hover
+				color: #fff
+.header_sticky_no-shadow
+	box-shadow: none !important

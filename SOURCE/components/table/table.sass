@@ -1,0 +1,61 @@
+table
+	border-collapse: collapse
+	width: 100%
+	// margin: 0 0 24px
+	// width: calc(100% - 30px)
+
+thead th
+	border-bottom: 1px solid $color-gray-1
+	padding-bottom: 0.5em
+
+th
+	padding: 1em
+	text-align: left
+
+tr
+	border-bottom: 1px solid $color-border-dark
+
+td
+	padding: 1em
+
+th:first-child, td:first-child
+	padding-left: 0
+
+th:last-child, td:last-child
+	padding-right: 0
+
+.table_no-outer-borders
+	table-layout: fixed
+	border-collapse: collapse
+	border-style: hidden
+	tr
+		border-collapse: collapse
+		border-style: hidden
+		border: 1px solid $color-border-dark
+	td
+		padding: 2em
+		border-collapse: collapse
+		border: 1px solid $color-border-dark
+
+@media screen and (max-width: $xs)
+	.table-xs-flex
+		display: block
+		tbody, tr, td
+			display: block
+		&.table_no-outer-borders
+			tr
+				border: none
+			td
+				padding: 2em
+				border-left: none
+				border-right: none
+				border-top: none
+				// border-
+				// border: none
+			tr:first-child
+				td:first-child
+						margin-top: -2em
+			tr:last-child
+				td:last-child
+					border-bottom: none
+					margin-bottom: -2em

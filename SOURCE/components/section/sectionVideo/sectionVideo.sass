@@ -1,0 +1,62 @@
+.section-video
+	display: flex
+	width: 100%
+	flex-direction: column
+	align-items: center
+	justify-content: center
+.section-video__link
+	display: block
+	margin: auto
+	@include fluid('width', 80, 160)
+	@include fluid('height', 80, 160)
+	border-radius: 100%
+	will-change: transform
+	font-weight: 500
+	color: #fff
+	z-index: 60
+.section-video__link-inner
+	background-color: $color-dark-1
+	color: #fff
+	border-radius: 100%
+	width: 100%
+	height: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+.no-touchevents
+	.section-video__link-inner[data-arts-cursor-label]:not([data-arts-cursor-label="false"])
+		&:hover
+			.section-video__icon
+				opacity: 0
+				visibility: hidden
+				transform: translateY(20px)
+.section-video__link-inner[data-arts-cursor-label]:not([data-arts-cursor]):not([data-arts-cursor-label="false"])
+	&:after
+		content: attr(data-arts-cursor-label)
+		display: inline-block
+		position: absolute
+		top: 50%
+		left: 50%
+		z-index: 50
+		transform: translate(-50%, -20px)
+		opacity: 0
+		visibility: hidden
+		+trans1
+	&:hover
+		&:after
+			opacity: 1
+			visibility: visible
+			transform: translate(-50%, -50%)
+
+.section-video__container
+	position: relative
+	display: flex
+	align-items: center
+	justify-content: center
+	width: 100%
+	// height: 100%
+.section-video__icon.material-icons
+	+trans1
+	@include fluid-type(24, 32)
+	> *
+		color: #fff !important

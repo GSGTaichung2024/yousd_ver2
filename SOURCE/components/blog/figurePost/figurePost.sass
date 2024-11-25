@@ -1,0 +1,55 @@
+.figure-post
+	&.hover-zoom-underline
+		.figure-post__media-link
+			transform: scale(1.05)
+.figure-post_card
+	overflow: hidden
+	border: 1px solid $color-border-dark
+	border-radius: 4px
+	&:hover
+		border-color: transparent
+.figure-post__media
+	overflow: hidden
+	position: relative
+.figure-post__date
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	will-change: transform
+	position: absolute
+	top: 0
+	left: 0
+	@include fluid('width', 70, 100)
+	@include fluid('height', 70, 100)
+	z-index: 50
+	text-align: center
+.text-center
+	.figure-post__date
+		right: 0
+		margin: 0 auto
+.figure-post__date_centered
+	right: 0
+	margin: 0 auto
+.figure-post__date-day
+	display: block
+	font-weight: normal
+	line-height: 1
+.figure-post__date-month
+	display: block
+	line-height: 1
+.figure-post__media-link
+	display: block
+	+trans1
+	transform-origin: center center
+
+.figure-post__date_small
+	@include fluid('width', 60, 80)
+	@include fluid('height', 60, 80)
+.figure-post__header
+	a.underline-hover__target
+		transition-property: background-size, color
+
+@media screen and (max-width: $xs)
+	.figure-post_card
+		padding: 20px !important

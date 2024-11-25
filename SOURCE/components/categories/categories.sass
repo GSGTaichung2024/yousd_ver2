@@ -1,0 +1,16 @@
+.categories
+	+reset-ul
+	font-size: 13px
+	font-weight: 500
+	li
+		display: inline-flex
+		flex-wrap: wrap
+		// align-items: center
+		line-height: 1.6
+	li:not(:last-child):after
+		content: '/'
+		color: $color-dark-1
+		display: inline-block
+		margin-left: 6px
+		margin-right: 5px
+		+trans1

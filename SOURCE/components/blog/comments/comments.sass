@@ -1,0 +1,102 @@
+// .comments-area, .comment-respond
+// .comments-title
+// 	font-size: 24px
+// 	font-weight: 600
+// 	line-height: 1.5
+// 	margin-top: 0
+// 	margin-bottom: 10px
+.comments-title, .comment-reply-title
+	@extend .h3
+	margin-top: 0
+	margin-bottom: 0
+.comment-list
+	+reset-ul
+	// margin-top: 1em
+	padding-left: 0 !important
+	> li
+		padding-top: 1.5em
+		padding-bottom: 1.5em
+		ol.children
+			+reset-ul
+			padding-left: 4%
+			li
+				padding-top: 1.5em
+				padding-bottom: 1.5em
+			li:last-child
+				padding-bottom: 0
+	> li:not(:last-child)
+		border-bottom: 1px solid $color-border-dark
+	> ol
+		+reset-ul
+.comment-author
+	max-width: 100px
+	margin-right: 2em
+	flex: 0 0 auto
+	.avatar
+		position: relative
+		width: 100%
+		max-width: 80px
+		max-height: 80px
+		border-radius: 100%
+		display: block
+.comment-meta
+	display: flex
+	align-items: center
+	justify-content: space-between
+	margin-bottom: 0.5em
+.comment-metadata
+	@extend .small
+	margin-left: 10px
+	a
+		border-bottom: none !important
+.comment-body
+	display: flex
+	.fn
+		font-family: var(--font-primary)
+		font-weight: 700
+		line-height: var(--h5-line-height)
+		@include fluid-type(var(--h5-min-font-size), var(--h5-max-font-size))
+		color: var(--h5-color-dark)
+.comment-content
+	width: 100%
+.reply
+	display: inline-block
+	line-height: 1
+	margin-top: 0.5em
+	margin-bottom: 0.5em
+.comment-reply-link
+	@extend .small
+	border-bottom: none !important
+	margin-right: 24px
+	&:before
+		content: '\e15e'
+		font-family: 'Material Icons'
+		text-transform: none
+		margin-right: 8px
+.comment-respond
+	margin-top: 1em
+.comment-edit-link
+	@extend .small
+	color: $color-gray-3
+	border-bottom: none !important
+	&:before
+		content: '\e3c9'
+		font-family: 'Material Icons'
+		text-transform: none
+		margin-right: 6px
+.trackback, .pingback
+	.edit-link
+		margin-left: 0.5em
+
+@media only screen and (max-width: $md)
+	.comment-author
+		margin-right: 1em
+		.avatar
+			max-width: 50px
+			max-height: 50px
+	.comment-meta
+		flex-wrap: wrap
+	.comment-metadata
+		margin-top: 0
+		margin-left: 0
+		width: 100%

@@ -1,0 +1,45 @@
+.button-circle
+	position: relative
+	display: inline-flex !important
+	align-items: center
+	justify-content: center
+	@include fluid('width', 60, 90)
+	@include fluid('height', 60, 90)
+	padding: 0 !important
+	opacity: .85
+	transition-property: opacity, color, background-color, border-color
+	&:hover
+		opacity: 1
+.cursorfollower
+	.button-circle[data-arts-cursor]
+		&:hover
+			border-color: transparent !important
+.button-circle_medium
+	@include fluid('width', 90, 140)
+	@include fluid('height', 90, 140)
+.button-circle_big
+	@include fluid('width', 130, 160)
+	@include fluid('height', 130, 160)
+.button-circle__inner
+	position: relative
+	display: inline-flex
+	align-items: center
+	justify-content: center
+	width: 100%
+	height: 100%
+.button-circle__geometry
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	border: 1px solid $color-border-dark
+	border-radius: 50%
+.button-circle__arrow
+	width: 30px
+	@include fluid-type(12, 18)
+	&:before
+		width: 30px
+		margin: 0
+.button-circle__label
+	padding: 0 !important

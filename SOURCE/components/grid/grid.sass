@@ -1,0 +1,59 @@
+.grid
+	overflow: hidden
+.grid__sizer
+	padding: 0 !important
+	margin: 0 !important
+	height: 0 !important
+.grid__item
+	display: block
+	width: 100%
+.grid_filtered
+	.js-grid__item
+		height: auto !important
+
+@media screen and (max-width: $xl)
+	.grid
+		margin-left: auto
+		margin-right: auto
+
+@media only screen and (min-width: $md + 1px)
+	.grid__item_desktop-12
+		flex: 0 0 100%
+		max-width: 100%
+	.grid__item_desktop-6
+		flex: 0 0 50%
+		max-width: 50%
+	.grid__item_desktop-4
+		flex: 0 0 33.333333%
+		max-width: 33.333333%
+	.grid__item_desktop-3
+		flex: 0 0 25%
+		max-width: 25%
+
+@media only screen and (min-width: $sm + 1px) and (max-width: $md)
+	.grid__item_tablet-12
+		flex: 0 0 100%
+		max-width: 100%
+	.grid__item_tablet-6
+		flex: 0 0 50%
+		max-width: 50%
+	.grid__item_tablet-4
+		flex: 0 0 33.333333%
+		max-width: 33.333333%
+	.grid__item_tablet-3
+		flex: 0 0 25%
+		max-width: 25%
+
+@media only screen and (max-width: $sm)
+	.grid__item_mobile-12
+		flex: 0 0 100%
+		max-width: 100%
+	.grid__item_mobile-6
+		flex: 0 0 50%
+		max-width: 50%
+	.grid__item_mobile-4
+		flex: 0 0 33.333333%
+		max-width: 33.333333%
+	.grid__item_mobile-3
+		flex: 0 0 25%
+		max-width: 25%

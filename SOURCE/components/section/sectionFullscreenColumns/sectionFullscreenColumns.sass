@@ -1,0 +1,12 @@
+.section-fullscreen-columns__border:not(:last-child)
+	border-right: 1px solid $color-border-dark
+
+@media screen and (max-width: $md)
+	.section-fullscreen-columns__border:not(:last-child)
+		border-right: none
+		border-bottom: 1px solid $color-border-dark
+
+@media screen and (min-width: $md + 1)
+	.section-fullscreen-columns__header
+		@include fluid('padding-top', $distance-min-small, $distance-max-small)
+		@include fluid('padding-bottom', $distance-min-small, $distance-max-small)

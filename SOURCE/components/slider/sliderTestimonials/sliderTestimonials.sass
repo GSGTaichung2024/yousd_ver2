@@ -1,0 +1,19 @@
+.slider-testimonials__wrapper-circle
+	position: relative
+	display: flex
+	align-items: center
+	justify-content: center
+	@include fluid('width', 80, 145)
+	@include fluid('height', 80, 145)
+	border-radius: 50%
+	border: 2px solid $color-border-dark
+	.svg-circle
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+.slider-testimonials__quote
+	@include fluid('width', 30, 50)
+.slider-testimonials__text
+	max-width: 100%

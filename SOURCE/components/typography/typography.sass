@@ -1,0 +1,162 @@
+h1, h2, h3
+	margin-top: 0.5em
+	margin-bottom: 0.5em
+h4, h5, h6
+	margin-top: 0.75em
+	margin-bottom: 0.75em
+.xxl
+	font-family: var(--font-primary)
+	font-weight: 100
+	line-height: var(--xxl-line-height)
+	@include fluid-type(var(--xxl-min-font-size), var(--xxl-max-font-size))
+	color: var(--xxl-color-dark)
+	letter-spacing: calc(var(--xxl-letter-spacing) * 1px)
+.xl
+	font-family: var(--font-primary)
+	font-weight: 100
+	line-height: var(--xl-line-height)
+	@include fluid-type(var(--xl-min-font-size), var(--xl-max-font-size))
+	color: var(--xl-color-dark)
+	letter-spacing: calc(var(--xl-letter-spacing) * 1px)
+h1, .h1
+	font-family: var(--font-primary)
+	font-weight: 100
+	line-height: var(--h1-line-height)
+	@include fluid-type(var(--h1-min-font-size), var(--h1-max-font-size))
+	color: var(--h1-color-dark)
+	letter-spacing: calc(var(--h1-letter-spacing) * 1px)
+h2, .h2
+	font-family: var(--font-primary)
+	font-weight: 200
+	line-height: var(--h2-line-height)
+	@include fluid-type(var(--h2-min-font-size), var(--h2-max-font-size))
+	color: var(--h2-color-dark)
+	letter-spacing: calc(var(--h2-letter-spacing) * 1px)
+h3, .h3
+	font-family: var(--font-primary)
+	font-weight: 300
+	line-height: var(--h3-line-height)
+	@include fluid-type(var(--h3-min-font-size), var(--h3-max-font-size))
+	color: var(--h3-color-dark)
+	letter-spacing: calc(var(--h3-letter-spacing) * 1px)
+h4, .h4
+	font-family: var(--font-primary)
+	font-weight: 500
+	line-height: var(--h4-line-height)
+	@include fluid-type(var(--h4-min-font-size), var(--h4-max-font-size))
+	color: var(--h4-color-dark)
+	letter-spacing: calc(var(--h4-letter-spacing) * 1px)
+h5, .h5
+	font-family: var(--font-primary)
+	font-weight: 500
+	line-height: var(--h5-line-height)
+	@include fluid-type(var(--h5-min-font-size), var(--h5-max-font-size))
+	color: var(--h5-color-dark)
+	letter-spacing: calc(var(--h5-letter-spacing) * 1px)
+h6, .h6
+	font-family: var(--font-primary)
+	font-weight: 500
+	line-height: var(--h6-line-height)
+	@include fluid-type(var(--h6-min-font-size), var(--h6-max-font-size))
+	color: var(--h6-color-dark)
+	letter-spacing: calc(var(--h6-letter-spacing) * 1px)
+p
+	margin-top: 1em
+	margin-bottom: 1em
+	font-weight: 400
+	@include fluid-type(var(--paragraph-min-font-size), var(--paragraph-max-font-size))
+	line-height: var(--paragraph-line-height)
+	letter-spacing: calc(var(--paragraph-letter-spacing) * 1px)
+	color: var(--paragraph-color-dark)
+.paragraph
+	font-weight: 400
+	@include fluid-type(var(--paragraph-min-font-size), var(--paragraph-max-font-size))
+	line-height: var(--paragraph-line-height)
+	letter-spacing: calc(var(--paragraph-letter-spacing) * 1px)
+	color: var(--paragraph-color-dark)
+blockquote, .blockquote
+	display: block
+	@include fluid-type(var(--blockquote-min-font-size), var(--blockquote-max-font-size))
+	line-height: 1.6
+	letter-spacing: calc(var(--blockquote-letter-spacing) * 1px)
+	font-style: italic
+	margin-top: 2em
+	margin-bottom: 2em
+	color: var(--blockquote-color-dark)
+	p
+		margin-top: 0
+		@include fluid-type(var(--blockquote-min-font-size), var(--blockquote-max-font-size))
+		line-height: 1.6
+		color: var(--blockquote-color-dark)
+		&:last-child, &:last-of-type
+			margin-bottom: 0
+	cite
+		display: block
+		margin-top: 1em
+		@include fluid-type(var(--paragraph-min-font-size), var(--paragraph-max-font-size))
+		line-height: var(--paragraph-line-height)
+		color: var(--paragraph-color-dark)
+		font-style: normal
+		font-weight: 700
+blockquote
+	border-left: 4px solid $color-dark-1
+	padding-left: 1.5em
+small, .small
+	font-weight: 500
+	font-size: 13px
+.subheading
+	font-weight: 700
+	line-height: var(--subheading-light-height)
+	@include fluid-type(var(--subheading-min-font-size), var(--subheading-max-font-size))
+	color: var(--subheading-color-dark)
+	text-transform: uppercase
+	letter-spacing: calc(var(--subheading-letter-spacing) * 1px)
+.has-drop-cap:not(:focus):not(.has-drop-cap_split)
+	&:first-letter
+		@include dropcap
+		&:after
+			content: ''
+			display: table
+			clear: both
+.arts-split-text:not(.js-arts-split-text)
+	.has-drop-cap
+		> div:first-child
+			display: inline-block !important
+			float: left
+			&:after
+				content: ''
+				display: table
+				clear: both
+		&:first-letter
+			margin: unset
+			float: unset
+			font-size: unset
+			text-transform: unset
+.arts-split-text__line
+	.overflow.d-inline-block
+		vertical-align: top
+.split-li-wrapper
+	display: inline-block
+	vertical-align: middle
+.has-split-list-items
+	li
+		&:before
+			transform-origin: left center
+			transform: scaleX(0)
+		&:after
+			transform-origin: center center
+			transform: scale(0)
+.has-split-list-items_animated
+	li
+		&:before, &:after
+			+trans2(transform)
+			transition-delay: 0.3s
+			transform: scale(1)
+.strong
+	font-weight: bold
+.em
+	font-style: italic
+
+@media screen and (max-width: $xs)
+	blockquote
+		padding-left: 1em

@@ -1,0 +1,15 @@
+.slider-projects-halfscreen__col-images
+	position: relative
+	max-width: calc(50vw - var(--gutter-horizontal) * 2)
+	padding-left: 0
+	padding-right: 0
+
+@media screen and (max-width: $md)
+	.slider-projects-halfscreen__col-images
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		max-width: 100%
+		.swiper-slide
+			padding: 0

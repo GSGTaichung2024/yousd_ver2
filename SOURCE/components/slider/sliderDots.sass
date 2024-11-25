@@ -1,0 +1,75 @@
+$dot-size: 32px
+	
+.slider__dots
+	display: inline-flex
+	// vertical-align: bottom
+	.slider__dot
+		&:first-child
+			margin-left: 0
+		&:last-child
+			margin-left: 0
+.slider__dots_vertical
+	flex-direction: column
+	height: auto
+	vertical-align: initial
+	.slider__dot
+		margin: 4px 0
+.slider__dot
+	position: relative
+	width: $dot-size
+	height: $dot-size
+	margin: 0 6px
+	cursor: pointer
+	outline: none
+	display: inline-block
+	border-radius: 100%
+	vertical-align: middle
+	z-index: 50
+	svg
+		display: block
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		margin: auto
+		width: $dot-size
+		height: $dot-size
+		border-radius: 100%
+		stroke-width: 4px
+		z-index: 50
+		.circle
+			stroke: rgba(104, 104, 104, 1)
+	&:after
+		content: ''
+		position: absolute
+		top: 0
+		right: 0
+		left: 0
+		bottom: 0
+		margin: auto
+		display: block
+		width: 4px
+		height: 4px
+		border-radius: 100%
+		background-color: rgba(104, 104, 104, .5)
+		+trans2
+	&:hover
+		&:after
+			background-color: rgba(104, 104, 104, 1)
+.slider__dot_active
+	pointer-events: none
+	&:after
+		background-color: rgba(104, 104, 104, 1)
+
+@media screen and (max-width: $sm)
+	.slider__dot
+		width: 20px
+		height: 20px
+		margin: 0 4px
+		svg
+			stroke-width: 8px
+			width: 20px
+			height: 20px
+	.slider__dots_vertical
+		.slider__dot
+			margin: 4px 0

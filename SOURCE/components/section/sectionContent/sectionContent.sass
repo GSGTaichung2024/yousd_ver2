@@ -1,0 +1,21 @@
+.section-content__divider
+	position: absolute
+	top: 0
+	left: calc(var(--bs-gutter-x) / 2)
+	right: calc(var(--bs-gutter-x) / 2)
+	width: auto
+	// left: 20px
+	// right: 20px
+	height: 1px
+	background-color: $color-border-dark
+.section-content__wrapper-item
+	position: relative
+	&:first-child
+		padding-top: 0 !important
+		.section-content__divider
+			display: none
+	&:last-child
+		padding-bottom: 0 !important
+		border-bottom: none
+.section-content__content
+	position: relative

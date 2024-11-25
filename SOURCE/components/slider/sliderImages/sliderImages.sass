@@ -1,0 +1,36 @@
+.slider-images
+	position: relative
+.slider-images__slider
+	&[data-drag-class]
+		.slider-images__slide
+			+trans3
+		img
+			+trans3
+.slider-images__captions
+	background-image: linear-gradient($color-border-dark, $color-border-dark)
+	background-position: 0% 0%
+	background-repeat: no-repeat
+	background-size: 100% 2px
+	.swiper-slide
+		cursor: pointer
+		opacity: .4
+		+trans1
+		&:hover
+			opacity: 1
+	.swiper-slide-active
+		opacity: 1
+.slider-images__underline
+	pointer-events: none
+	display: block
+	position: absolute
+	top: 0
+	left: 0
+	width: 0
+	height: 2px
+	background-color: $color-dark-1
+	z-index: 50
+.slider-images_scale-up
+	.slider-images__slide
+		transform: scale(0.95)
+	img
+		transform: scale(1.05)

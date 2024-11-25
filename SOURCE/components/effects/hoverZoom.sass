@@ -1,0 +1,24 @@
+.hover-zoom
+	backface-visibility: hidden
+.hover-zoom
+	&:hover:not(:focus)
+		+hoverZoomEffect
+.hover-zoom_out
+	&:hover
+		.hover-zoom__zoom
+			transform: scale(1) !important
+		.hover-zoom__inner
+			transform: scale(0.95) !important
+.hover-zoom__inner
+	overflow: hidden
+	height: 100%
+	width: 100%
+.hover-zoom__zoom, .hover-zoom__inner
+	transform-origin: center center
+	+trans3
+	will-change: transform
+	backface-visibility: hidden
+.hover-zoom__caption
+	+trans3
+.hover-zoom__zoomed
+	transform: scale(1.1)

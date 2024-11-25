@@ -1,0 +1,52 @@
+@for $i from 1 through 20
+	.grid_fluid-#{$i}
+		margin: -#{$i}vw
+		@media only screen and (max-width: $sm)
+			margin: -1em
+	.grid__item_fluid-#{$i}
+		padding: #{$i}vw
+		@media only screen and (max-width: $sm)
+			padding: 1em
+	.grid:not(.grid_filtered)
+		.grid__item_fluid-#{$i}-fancy
+			@media only screen and (min-width: $sm + 1px)
+				&:nth-of-type(3)
+					margin-top: #{$i * 2}vw
+
+@for $i from 1 through 20
+	.grid_fluid-v-#{$i}
+		margin-top: -#{$i}vw
+		margin-bottom: -#{$i}vw
+		@media only screen and (max-width: $sm)
+			margin-top: -1em
+			margin-bottom: -1em
+	.grid__item_fluid-v-#{$i}
+		padding-top: #{$i}vw
+		padding-bottom: #{$i}vw
+		@media only screen and (max-width: $sm)
+			padding-top: 1em
+			padding-bottom: 1em
+	.grid:not(.grid_filtered)
+		.grid__item_fluid-#{$i}-fancy
+			@media only screen and (min-width: $sm + 1px)
+				&:nth-of-type(3)
+					margin-top: #{$i * 2}vw
+
+@for $i from 1 through 20
+	.grid_fluid-h-#{$i}
+		margin-left: -#{$i}vw
+		margin-right: -#{$i}vw
+		@media only screen and (max-width: $sm)
+			margin-left: -1em
+			margin-right: -1em
+	.grid__item_fluid-h-#{$i}
+		padding-left: #{$i}vw
+		padding-right: #{$i}vw
+		@media only screen and (max-width: $sm)
+			padding-left: 1em
+			padding-right: 1em
+	.grid:not(.grid_filtered)
+		.grid__item_fluid-#{$i}-fancy
+			@media only screen and (min-width: $sm + 1px)
+				&:nth-of-type(3)
+					margin-top: #{$i * 2}vw

@@ -1,0 +1,42 @@
+.filter
+	position: relative
+	z-index: 80
+.filter__inner
+	margin-top: -0.5em
+	margin-bottom: -0.5em
+	position: relative
+.filter__item
+	padding-top: 0.5em
+	padding-bottom: 0.5em
+	cursor: pointer
+	+trans1
+	color: var(--color-dark-4)
+	opacity: 0.5
+	&:not(.filter__item_active):hover
+		opacity: 1
+.filter__item-inner
+	position: relative
+	display: inline-block
+.filter__item_active
+	opacity: 1
+	pointer-events: none
+.filter__underline
+	pointer-events: none
+	display: block
+	position: absolute
+	margin-top: 2em
+	top: 0
+	left: 0
+	background-color: var(--color-dark-4)
+	width: 0
+	height: 2px
+.filter__item-label
+	display: inline-block
+
+@media screen and (max-width: $md)
+	.filter
+		.filter__item
+			&:first-child
+				padding-top: 0
+			&:last-child
+				padding-bottom: 0

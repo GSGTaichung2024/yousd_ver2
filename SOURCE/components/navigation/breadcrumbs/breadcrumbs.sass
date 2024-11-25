@@ -1,0 +1,12 @@
+.breadcrumbs
+	+reset-ul
+	@extend  .h6
+	li
+		display: inline-block
+	li:not(:last-child):after
+		content: '/'
+		color: $color-dark-1
+		display: inline-block
+		margin-left: 6px
+		margin-right: 5px
+		+trans1

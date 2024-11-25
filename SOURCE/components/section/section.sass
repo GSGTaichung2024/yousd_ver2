@@ -1,0 +1,75 @@
+.section
+	position: relative
+.section-dynamic-background
+	transition: background-color 0.4s ease
+.section_z-100
+	z-index: 100
+.section__content
+	position: relative
+	z-index: 60
+.section__headline
+	display: block
+	@include fluid('width', 60, 200)
+	height: 1px
+	background-color: $color-dark-4
+.section__headline:not(.section__headline_left):not(.section__headline_right)
+	+ *
+		@include fluid('margin-top', 20, 40)
+.section__headline_left, .section__headline_right
+	position: absolute
+	top: 0
+	bottom: 0
+	margin: 2em 0 0
+	z-index: 60
+	@include fluid('width', 0, 200)
+	+ *
+		margin-top: 0
+.container
+	.section__headline_left
+		left: calc(100% - ( (100vw + 1120px) / 2 ) - var(--bs-gutter-x))
+	.section__headline_right
+		right: calc(100% - ( (100vw + 1120px) / 2 ) - var(--bs-gutter-x))
+.text-start
+	.section__headline
+		margin-left: 0
+		margin-right: auto
+.text-center
+	.section__headline
+		margin-left: auto
+		margin-right: auto
+.text-end
+	.section__headline
+		margin-left: auto
+		margin-right: 0
+.section__bg
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	overflow: hidden
+	z-index: 0
+.section__bg-container-right
+	max-width: 100%
+	width: calc( 100% - ( (100vw - 1140px) / 2 ) - 20px )
+	margin-left: auto
+.section__bg-container-left
+	max-width: 100%
+	width: calc( 100% - ( (100vw - 1140px) / 2 ) - 20px )
+	margin-right: auto
+
+
+@media screen and (max-width: $xxl)
+	.section__headline_left, .section__headline_right
+		@include fluid('width', 0, 100)
+	.section__bg-container-right, .section__bg-container-left
+		width: 100%
+@media screen and (max-width: $xxl)
+	.section__headline_left, .section__headline_right
+		display: none !important
+
+@media screen and (max-width: $md)
+	.section-fullheight__inner_mobile-auto
+		min-height: 0
+		height: 100%
+		display: block

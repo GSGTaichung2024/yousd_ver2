@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>Kinsey – AJAX Agency HTML5 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="description" content="Kinsey – AJAX Agency HTML5 Template"/>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,300;1,400;1,500&amp;display=swap"/>
+    <!-- Template Vendor's Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/vendor.css"/>
+    <!-- Template Main Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <!-- Favicons & App Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/content/apple-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="60x60" href="img/content/apple-icon-60x60.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="img/content/apple-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="img/content/apple-icon-76x76.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="img/content/apple-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="img/content/apple-icon-120x120.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="img/content/apple-icon-144x144.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="img/content/apple-icon-152x152.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/content/apple-icon-180x180.png"/>
+    <link rel="icon" type="image/png" sizes="192x192" href="img/content/android-icon-192x192.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/content/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="96x96" href="img/content/favicon-96x96.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/content/favicon-16x16.png"/>
+    <link rel="manifest" href="img/content/manifest.json"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <meta name="msapplication-TileImage" content="img/content/ms-icon-144x144.png"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <link rel="icon" type="image/x-icon" href="img/content/favicon.ico"/>
+  </head>
+  <body>
+    <div data-barba="wrapper">
+      <!-- PAGE PRELOADER -->
+      <div class="preloader preloader_header-menu-hidden mask-reveal" id="js-preloader" data-arts-theme-text="light" data-arts-preloader-logo="secondary">
+        <div class="mask-reveal__layer mask-reveal__layer-1 bg-dark-1">
+          <div class="mask-reveal__layer mask-reveal__layer-2">
+            <div class="preloader__wrapper">
+              <div class="preloader__counter preloader__counter_started me-auto mt-auto underline js-preloader__counter">00%</div>
+              <div class="preloader__content ms-auto mt-auto js-preloader__content">
+                <div class="h6">Loading</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- - PAGE PRELOADER -->
+      <!-- PAGE HEADER -->
+      <header class="header header_fixed container-fluid js-header-sticky" id="page-header" data-arts-theme-text="dark" data-arts-header-sticky-theme="bg-light-1" data-arts-header-logo="primary" data-arts-header-sticky-logo="primary" data-arts-header-sticky-theme-text="dark" data-arts-header-overlay-theme-text="light">
+        <!-- top bar -->
+        <div class="header__container header__controls">
+          <div class="row justify-content-between align-items-center">
+            <!-- logo -->
+            <div class="col-auto header__col header__col-left"><a class="logo" href="index.html">
+                <div class="logo__wrapper-img">
+                    <!-- primary logo version (for light backgrounds)--><img class="logo__img-primary" src="img/general/logo/logo-dark.webp" alt="Logo" width="52" height="19"/>
+                    <!-- secondary logo version (for dark backgrounds)--><img class="logo__img-secondary" src="img/general/logo/logo-light.webp" alt="Logo" width="52" height="19"/>
+                  </div></a>
+            </div>
+            <!-- - logo -->
+            <!-- burger icon -->
+            <div class="col-auto header__col d-flex align-items-center">
+              <div class="ms-auto header__burger" id="js-burger" data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.7" data-arts-cursor-magnetic="data-arts-cursor-magnetic" data-arts-cursor-hide-native="true">
+                <div class="header__burger-line"></div>
+                <div class="header__burger-line"></div>
+                <!-- burger labels -->
+                <div class="header__label header__burger-label">
+                  <div class="header__label-burger header__label-burger_inner header__label-burger_closed-open">Menu</div>
+                  <div class="header__label-burger header__label-burger_inner header__label-burger_closed-hover">Open</div>
+                  <div class="header__label-burger header__label-burger_inner header__label-burger_opened-open">Close</div>
+                  <div class="header__label-burger header__label-burger_inner header__label-burger_opened-hover">Close</div>
+                </div>
+                <!-- - burger labels -->
+              </div>
+            </div>
+            <!-- - burger icon -->
+            <!-- "back" button for submenu nav -->
+            <div class="header__overlay-menu-back" id="js-submenu-back" data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.7" data-arts-cursor-magnetic="data-arts-cursor-magnetic" data-arts-cursor-hide-native="true"><i class="material-icons">arrow_back</i>
+              <div class="header__label header__label_status">
+                <div class="js-header-label-submenu"></div>
+              </div>
+              <div class="header__label header__label_opened-back">Back</div>
+            </div>
+            <!-- - "back" button for submenu nav -->
+            <!-- slider label -->
+            <div class="header__overlay-menu-info header__label header__label_side">Selected Projects</div>
+            <!-- - slider label -->
+          </div>
+        </div>
+        <!-- - top bar -->
+        <!-- fullscreen overlay container -->
+        <div class="header__wrapper-overlay-menu" data-arts-theme-text="light">
+          <div class="mask-reveal w-100 h-100">
+            <div class="mask-reveal__layer mask-reveal__layer-1 bg-dark-1">
+              <div class="mask-reveal__layer mask-reveal__layer-2">
+                <div class="row align-items-center h-100">
+                  <!-- menu & bottom widgets -->
+                  <div class="header__menu-column col-lg-7 order-lg-2 h-100 d-flex flex-column position-relative bg-dark-2">
+                    <!-- top gradient-->
+                    <div class="header__menu-gradient header__menu-gradient_top"></div>
+                    <!-- - top gradient-->
+                    <!-- virtual scrolling container -->
+                    <div class="header__scroll-container js-header-smooth-scroll-container overflow pointer-events-auto">
+                      <div class="header__wrapper-menu">
+                        <ul class="menu-overlay js-menu-overlay">
+                          <li class="menu-item-has-children"><a href="#" data-pjax-link="overlayMenu">
+                              <div class="menu-overlay__item-wrapper arts-split-text js-arts-split-text" data-arts-split-text="lines,words" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines"><span class="menu-overlay__subheading small mb-1">01&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;唱歌課程</span>
+                                <div class="menu-overlay__heading h2">線上課程</div>
+                              </div></a>
+                            <ul class="sub-menu pointer-events-none">
+                              <li class="menu-item-has-children"><a href="#" data-pjax-link="overlayMenu">
+                                  <div class="menu-overlay__item-wrapper arts-split-text js-arts-split-text" data-arts-split-text="lines,words" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">
+                                    <div class="menu-overlay__heading h3">基礎課程</div>
+                                  </div></a>
+                                <ul class="sub-menu pointer-events-none">
+                                  <li><a href="#" data-pjax-link="overlayMenu">
+                                      <div class="menu-overlay__item-wrapper arts-split-text js-arts-split-text" data-arts-split-text="lines,words" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">
+                                        <div class="menu-overlay__heading h3">聲音保養與發聲技巧</div>
+                                      </div></a>
+                                  </li>
+                                  <li><a href="#" data-pjax-link="overlayMenu">
+                                      <div class="menu-overlay__item-wrapper arts-split-text js-arts-split-text" data-arts-split-text="lines,words" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">
+                                        <div class="menu-overlay__heading h3">音準與節奏掌握</div>
+                                      </div></a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li class="menu-item-has-children"><a href="#" data-pjax-link="overlayMenu">
+                                  <div class="menu-overlay__item-wrapper arts-split-text js-arts-split-text" data-arts-split-text="lines,words" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">
+                                    <div class="menu-overlay__heading h3">進階課程</div>
+                                  </div></a>
+                                <ul class="sub-menu pointer-events-none">
+                                  <li><a href="#" data-pjax-link="overlayMenu">
+                                      <div class="menu-overlay__item-wrapper arts-split-text js-arts-split-text" data-arts-split-text="lines,words" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">
+                                        <div class="menu-overlay__heading h3">情感表達與歌詞詮釋</div>
+                                      </div></a>
+                                  </li>
+                                  <li><a href="#" data-pjax-link="overlayMenu">
+                                      <div class="menu-overlay__item-wrapper arts-split-text js-arts-split-text" data-arts-split-text="lines,words" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">
+                                        <div class="menu-overlay__heading h3">經典歌曲演唱</div>
+                                      </div></a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li><a href="#" data-pjax-link="overlayMenu">
+                                  <div class="menu-overlay__item-wrapper arts-split-text js-arts-split-text" data-arts-split-text="lines,words" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">
+                                    <div class="menu-overlay__heading h3">明星特別課程</div>
+                                  </div></a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="menu-item-has-children"><a href="#" data-pjax-link="overlayMenu">
+                              <div class="menu-overlay__item-wrapper arts-split-text js-arts-split-text" data-arts-split-text="lines,words" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines"><span class="menu-overlay__subheading small mb-1">02&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;延伸服務</span>
+                                <div class="menu-overlay__heading h2">生活課程</div>
+                              </div></a>
+                            <ul class="sub-menu pointer-events-none">
+                              <li><a href="#" data-pjax-link="overlayMenu">
+                                  <div class="menu-overlay__item-wrapper arts-split-text js-arts-split-text" data-arts-split-text="lines,words" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">
+                                    <div class="menu-overlay__heading h3">社交與生活</div>
+                                  </div></a>
+                              </li>
+                              <li><a href="#" data-pjax-link="overlayMenu">
+                                  <div class="menu-overlay__item-wrapper arts-split-text js-arts-split-text" data-arts-split-text="lines,words" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">
+                                    <div class="menu-overlay__heading h3">情感課題</div>
+                                  </div></a>
+                              </li>
+                              <li><a href="#" data-pjax-link="overlayMenu">
+                                  <div class="menu-overlay__item-wrapper arts-split-text js-arts-split-text" data-arts-split-text="lines,words" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">
+                                    <div class="menu-overlay__heading h3">健康管理</div>
+                                  </div></a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="menu-item-has-children"><a href="#" data-pjax-link="overlayMenu">
+                              <div class="menu-overlay__item-wrapper arts-split-text js-arts-split-text" data-arts-split-text="lines,words" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines"><span class="menu-overlay__subheading small mb-1">03&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;線下活動</span>
+                                <div class="menu-overlay__heading h2">廟宇活動</div>
+                              </div></a>
+                            <ul class="sub-menu pointer-events-none">
+                              <li><a href="#" data-pjax-link="overlayMenu">
+                                  <div class="menu-overlay__item-wrapper arts-split-text js-arts-split-text" data-arts-split-text="lines,words" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">
+                                    <div class="menu-overlay__heading h3">唱歌比賽</div>
+                                  </div></a>
+                              </li>
+                              <li><a href="#" data-pjax-link="overlayMenu">
+                                  <div class="menu-overlay__item-wrapper arts-split-text js-arts-split-text" data-arts-split-text="lines,words" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">
+                                    <div class="menu-overlay__heading h3">問感情活動</div>
+                                  </div></a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li><a href="#" data-pjax-link="overlayMenu">
+                              <div class="menu-overlay__item-wrapper arts-split-text js-arts-split-text" data-arts-split-text="lines,words" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines"><span class="menu-overlay__subheading small mb-1">04&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;關於我們</span>
+                                <div class="menu-overlay__heading h2">品牌理念</div>
+                              </div></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- - virtual scrolling container -->
+                    <!-- bottom gradient-->
+                    <div class="header__menu-gradient header__menu-gradient_bottom"></div>
+                    <!-- - bottom gradient-->
+                  </div>
+                  <!-- - menu & bottom widgets -->
+                  <!-- featured projects slider -->
+                  <div class="header__slider-column col-lg-5 order-lg-1 h-100 d-none d-lg-flex flex-column position-relative bg-dark-1">
+                    <div class="header__wrapper-slider">
+                      <div class="header__label d-lg-none mb-4">精選課程</div>
+                      <div class="slider-menu swiper-container js-slider-menu" data-speed="1200" data-centered-slides="true" data-drag-mouse="true" data-drag-cursor="true" data-drag-label="Drag" data-drag-hide-cursor="true" data-drag-class="slider-projects-fullscreen__images_scale-up" data-mousewheel-enabled="true" data-keyboard-enabled="true">
+                        <div class="swiper-wrapper">
+                          <!-- item -->
+                          <div class="swiper-slide slider-menu__slide" data-arts-hover-class="hover-zoom-underline">
+                            <div data-swiper-parallax-opacity="0.3"><a class="slider-menu__wrapper-image" href="#" data-arts-hover="trigger" data-arts-cursor="true" data-arts-cursor-hide-native="true" data-arts-cursor-label="查看課程" data-arts-cursor-scale="2.4" data-arts-cursor-color="#fff" data-arts-cursor-background-color="#ed4830">
+                                <div class="overflow" data-swiper-parallax-y="-25%">
+                                  <div class="w-100 h-100" data-swiper-parallax="true" data-swiper-parallax-y="25%"><img class="swiper-lazy of-cover hover-zoom__zoom" src="#" data-src="img/assets/projects/project1/img-cover-1.jpg" width="1920" height="1280" alt=""/>
+                                  </div>
+                                </div></a>
+                              <div class="slider-menu__header" data-swiper-parallax-y="-50%"><a class="d-inline-block" href="#" data-arts-hover="trigger" data-arts-cursor="true" data-arts-cursor-hide-native="true" data-arts-cursor-label="查看課程" data-arts-cursor-scale="2.4" data-arts-cursor-color="#fff" data-arts-cursor-background-color="#ed4830">
+                                  <h3 class="h3 mt-0 mb-2 slider__heading underline-hover__target">聲音保養與發聲技巧</h3></a>
+                                <div class="w-100"></div>
+                                <div class="d-inline-block slider__subheading">
+                                  <ul class="post-meta post-meta_mini">
+                                    <li><a href="#">基礎課程</a>
+                                      <div class="post-meta__divider"></div>
+                                    </li>
+                                    <li><a href="#">2024</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- item -->
+                          <div class="swiper-slide slider-menu__slide" data-arts-hover-class="hover-zoom-underline">
+                            <div data-swiper-parallax-opacity="0.3"><a class="slider-menu__wrapper-image" href="#" data-arts-hover="trigger" data-arts-cursor="true" data-arts-cursor-hide-native="true" data-arts-cursor-label="查看課程" data-arts-cursor-scale="2.4" data-arts-cursor-color="#fff" data-arts-cursor-background-color="#ed4830">
+                                <div class="overflow" data-swiper-parallax-y="-25%">
+                                  <div class="w-100 h-100" data-swiper-parallax="true" data-swiper-parallax-y="25%"><img class="swiper-lazy of-cover hover-zoom__zoom" src="#" data-src="img/assets/projects/project2/img-cover-2.jpg" width="1920" height="1280" alt=""/>
+                                  </div>
+                                </div></a>
+                              <div class="slider-menu__header" data-swiper-parallax-y="-50%"><a class="d-inline-block" href="#" data-arts-hover="trigger" data-arts-cursor="true" data-arts-cursor-hide-native="true" data-arts-cursor-label="查看課程" data-arts-cursor-scale="2.4" data-arts-cursor-color="#fff" data-arts-cursor-background-color="#ed4830">
+                                  <h3 class="h3 mt-0 mb-2 slider__heading underline-hover__target">情感表達與歌詞詮釋</h3></a>
+                                <div class="w-100"></div>
+                                <div class="d-inline-block slider__subheading">
+                                  <ul class="post-meta post-meta_mini">
+                                    <li><a href="#">進階課程</a>
+                                      <div class="post-meta__divider"></div>
+                                    </li>
+                                    <li><a href="#">2024</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- item -->
+                          <div class="swiper-slide slider-menu__slide" data-arts-hover-class="hover-zoom-underline">
+                            <div data-swiper-parallax-opacity="0.3"><a class="slider-menu__wrapper-image" href="#" data-arts-hover="trigger" data-arts-cursor="true" data-arts-cursor-hide-native="true" data-arts-cursor-label="查看課程" data-arts-cursor-scale="2.4" data-arts-cursor-color="#fff" data-arts-cursor-background-color="#ed4830">
+                                <div class="overflow" data-swiper-parallax-y="-25%">
+                                  <div class="w-100 h-100" data-swiper-parallax="true" data-swiper-parallax-y="25%"><img class="swiper-lazy of-cover hover-zoom__zoom" src="#" data-src="img/assets/projects/project5/img-cover-5.jpg" width="1920" height="1280" alt=""/>
+                                  </div>
+                                </div></a>
+                              <div class="slider-menu__header" data-swiper-parallax-y="-50%"><a class="d-inline-block" href="#" data-arts-hover="trigger" data-arts-cursor="true" data-arts-cursor-hide-native="true" data-arts-cursor-label="查看課程" data-arts-cursor-scale="2.4" data-arts-cursor-color="#fff" data-arts-cursor-background-color="#ed4830">
+                                  <h3 class="h3 mt-0 mb-2 slider__heading underline-hover__target">明星特別課程</h3></a>
+                                <div class="w-100"></div>
+                                <div class="d-inline-block slider__subheading">
+                                  <ul class="post-meta post-meta_mini">
+                                    <li><a href="#">特別課程</a>
+                                      <div class="post-meta__divider"></div>
+                                    </li>
+                                    <li><a href="#">2024</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="is-dragging__blocker"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- - featured projects slider -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - fullscreen overlay container -->
+      </header>
+      <!-- - PAGE HEADER -->
+      <!-- PAGE MAIN CONTAINER -->
+      <div class="js-smooth-scroll" id="page-wrapper" data-barba="container">
+        <!-- PAGE CONTENT -->
+        <main class="page-wrapper__content">
+          <!-- section INTRO -->
+          <section class="section section-intro section-content pt-xlarge pb-medium bg-light-1" style="background-image: url('img/assets/hcd.webp'); background-repeat: no-repeat; background-position: top 10px right;">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <div class="section-content__content content js-arts-split-text arts-split-text" data-arts-os-animation="true" data-arts-os-animation-name="animateText" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">
+                    <div class="section-content__subline h6">有所德：歌唱班與人生課堂</div>
+                    <h2 class="h2 mb-0">人生如歌<br/>唱出自己的和弦</h2>
+                  </div>
+                  <div class="row">
+                    <div class="col-auto section-content__wrapper-button mt-4 mt-md-5" data-arts-os-animation="true" data-arts-os-animation-name="animateJump"><a class="button button_icon button_bordered bg-gray-1" href="#section-featured-works"><span class="button__label button__label-normal"><span class="button__title">課程列表</span><span class="button__icon button__icon_after knz-arrow-right"></span></span><span class="button__label button__label-hover"><span class="button__title">課程列表</span><span class="button__icon button__icon_after knz-arrow-right"></span></span></a>
+                    </div>
+                    <div class="col-auto section-content__wrapper-button mt-4 mt-md-5" data-arts-os-animation="true" data-arts-os-animation-name="animateJump"><a class="button button_icon button_solid bg-dark-3" href="036-contacts.html#section-form"><span class="button__label button__label-normal"><span class="button__title">歌唱比賽</span><span class="button__icon button__icon_after knz-arrow-right"></span></span><span class="button__label button__label-hover"><span class="button__title">歌唱比賽</span><span class="button__icon button__icon_after knz-arrow-right"></span></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- - section INTRO -->
+
+          <section class="section bg-light-3" data-arts-theme-text="dark">
+            <!-- section HEADER -->
+            <section class="section section-content pt-large pb-xsmall">
+              <div class="section-content__content content js-arts-split-text arts-split-text container" data-arts-os-animation="true" data-arts-os-animation-name="animateText" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">
+                <h2 class="h2 mb-lg-0 mb-3">什麼是有所德？</h2>
+              </div>
+            </section>
+            <!-- - section HEADER -->
+            <!-- section TESTIMONIALS -->
+            <section class="section section-testimonials pb-large">
+              <div class="container">
+                <div class="row justify-content-between">
+                  <div class="col-auto">
+                    <div class="slider-testimonials__wrapper-circle mb-4" data-arts-os-animation="true" data-arts-os-animation-name="animateJump"><img class="slider-testimonials__quote" src="img/general/quote-black.svg" width="50" height="44" alt=""/>
+                      <svg class="svg-circle" viewBox="0 0 60 60">
+                        <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="slider slider-testimonials swiper-container js-slider" data-autoplay-enabled="true" data-autoplay-delay="9000" data-transition="text">
+                      <div class="swiper-wrapper">
+                        <!-- item -->
+                        <div class="swiper-slide">
+                          <div class="slider__text slider-testimonials__text h3 js-arts-split-text arts-split-text" data-arts-os-animation="true" data-arts-os-animation-name="animateText" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">有所德是由許常德老師創辦的創新專案，結合歌唱教學與人生教育，幫助你探索聲音與內心的無限可能。.</div>
+                          <div class="slider__text slider-testimonials__author mt-4 js-arts-split-text arts-split-text" data-arts-os-animation="true" data-arts-os-animation-name="animateText" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">Know More...</div>
+                        </div>
+                        <!-- item -->
+                        <div class="swiper-slide">
+                          <div class="slider__text slider-testimonials__text h3 js-arts-split-text arts-split-text" data-arts-os-animation="true" data-arts-os-animation-name="animateText" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">Almost all the themes that I purchased here at Themeforest I will never use because the bad things coming after installing the theme, but sometimes there are a few jewels.<br><br>This is one of the jewels: Well organised, clean coded good integrated with elementor and just working fine out of the box.</div>
+                          <div class="slider__text slider-testimonials__author mt-4 js-arts-split-text arts-split-text" data-arts-os-animation="true" data-arts-os-animation-name="animateText" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">Client – Kevin Salazar</div>
+                        </div>
+                        <!-- item -->
+                        <div class="swiper-slide">
+                          <div class="slider__text slider-testimonials__text h3 js-arts-split-text arts-split-text" data-arts-os-animation="true" data-arts-os-animation-name="animateText" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">I never usually review an item this early on, but just one day in, and I'm driven to the review page.<br><br>This theme is a delight to use! Everything is so smooth and easy. There is a lot more customization than the preview would lead you to believe, especially with it being such a bespoke and highly animated design.</div>
+                          <div class="slider__text slider-testimonials__author mt-4 js-arts-split-text arts-split-text" data-arts-os-animation="true" data-arts-os-animation-name="animateText" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">Client – Lawrence L. Lovett</div>
+                        </div>
+                        <!-- item -->
+                        <div class="swiper-slide">
+                          <div class="slider__text slider-testimonials__text h3 js-arts-split-text arts-split-text" data-arts-os-animation="true" data-arts-os-animation-name="animateText" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">Transitions and motion animation on this theme are superb. Beautiful design. The documentation is super thorough, quick response to my query from author, great customer service. Can't fault it!</div>
+                          <div class="slider__text slider-testimonials__author mt-4 js-arts-split-text arts-split-text" data-arts-os-animation="true" data-arts-os-animation-name="animateText" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">Client – Timothy T. Dunlap</div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- slider DOTS -->
+                    <div class="slider__dots js-slider__dots" data-arts-os-animation="true" data-arts-os-animation-name="animateJump">
+                      <div class="slider__dot"></div>
+                    </div>
+                    <!-- - slider DOTS -->
+                  </div>
+                  <div class="col-lg-1 align-self-center">
+                    <!-- slider ARROWS -->
+                    <div class="slider__wrapper-arrows slider__wrapper-arrows_vertical d-lg-flex d-none" data-arts-os-animation="true" data-arts-os-animation-name="animateJump">
+                      <div class="slider__arrow material-icons js-slider__arrow-prev" data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.7" data-arts-cursor-magnetic="data-arts-cursor-magnetic" data-arts-cursor-hide-native="true">keyboard_arrow_up</div>
+                      <div class="slider__arrow material-icons js-slider__arrow-next" data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.7" data-arts-cursor-magnetic="data-arts-cursor-magnetic" data-arts-cursor-hide-native="true">keyboard_arrow_down</div>
+                    </div>
+                    <!-- - slider ARROWS -->
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- - section TESTIMONIALS -->
+          </section>
+          <!-- section HEADER -->
+
+
+          <!-- section FEATURED PROJECTS SLIDER -->
+          <section class="section section-slider-projects section-dynamic-background js-slider-background js-slider-projects py-large bg-portfolio-1" id="section-featured-works">
+            <div class="container position-relative mb-xsmall section-slider-projects__header">
+              <div class="row align-items-center justify-content-between">
+                <div class="col-auto">
+                  <h2 class="h2 my-0 js-arts-split-text arts-split-text" data-arts-os-animation="true" data-arts-os-animation-name="animateText" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">課程特色</h2>
+                </div>
+                <div class="col-auto">
+                  <!-- slider ARROWS -->
+                  <div class="slider__wrapper-arrows d-inline-flex mt-3" data-arts-os-animation="true" data-arts-os-animation-name="animateJump" data-arts-os-animation-params="{x: 30, y: 0}">
+                    <div class="slider__arrow material-icons js-slider__arrow-prev" data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.7" data-arts-cursor-magnetic="data-arts-cursor-magnetic" data-arts-cursor-hide-native="true">keyboard_arrow_left</div>
+                    <div class="slider__arrow material-icons js-slider__arrow-next" data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.7" data-arts-cursor-magnetic="data-arts-cursor-magnetic" data-arts-cursor-hide-native="true">keyboard_arrow_right</div>
+                  </div>
+                  <!-- - slider ARROWS -->
+                </div>
+              </div>
+            </div>
+            <div class="slider slider-projects swiper-container js-slider-projects__slider" data-auto-height="true" data-centered-slides="true" data-slides-per-view="2.25" data-slides-per-view-tablet="2" data-slides-per-view-mobile="1.25" data-space-between="60" data-space-between-tablet="30" data-space-between-mobile="0" data-autoplay-enabled="false" data-autoplay-delay="6000" data-drag-mouse="true" data-drag-cursor="true" data-drag-label="Drag" data-drag-hide-cursor="true" data-drag-class="slider-projects-fullscreen__images_scale-up" data-keyboard-enabled="true" data-touch-ratio="2">
+              <div class="swiper-wrapper">
+                <!-- item -->
+                <div class="swiper-slide slider-projects__slide d-flex-centered flex-column" data-slide-background="var(--color-portfolio-1)" data-slide-theme="" data-slide-header-theme="dark" data-slide-header-logo="primary" data-arts-hover-class="hover-zoom-underline">
+                  <div class="w-100" data-swiper-parallax-opacity="0.1"><a class="slider-projects__wrapper-image" href="#" data-arts-hover="trigger" data-arts-cursor="true" data-arts-cursor-hide-native="true" data-arts-cursor-label="了解更多" data-arts-cursor-scale="2.4" data-arts-cursor-color="#fff" data-arts-cursor-background-color="#ed4830">
+                      <div class="hover-zoom__inner">
+                        <div class="mask-reveal overflow" data-swiper-parallax-x="-10%" data-arts-os-animation="true" data-arts-os-animation-name="animateMask" data-arts-os-animation-params="{direction: 'right'}">
+                          <div class="mask-reveal__layer mask-reveal__layer-1">
+                            <div class="mask-reveal__layer mask-reveal__layer-2">
+                              <div class="w-100 h-100" data-swiper-parallax="true" data-swiper-parallax-x="10%"><img class="swiper-lazy of-cover hover-zoom__zoom" src="#" data-src="img/assets/projects/project1/img-cover-1.jpg" width="1920" height="1280" alt=""/>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div></a>
+                    <div class="slider-projects__header" data-swiper-parallax-x="-10%">
+                      <h2 class="h3 slider__heading underline-hover__target js-arts-split-text arts-split-text my-0" data-arts-os-animation="true" data-arts-os-animation-name="animateText" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-set-direction="y" data-arts-split-text-set-distance="100%" data-arts-split-text-overflow-wrap="lines">歌唱班</h2>
+                      <div class="w-100"></div>
+                      <div class="d-inline-block slider__subheading js-arts-split-text arts-split-text pointer-events-auto mt-2" data-arts-os-animation="true" data-arts-os-animation-name="animateText" data-arts-split-text="lines,words" data-arts-split-text-set="words" data-arts-split-text-overflow-wrap="words">專業技術與個性化指導，助你唱出最佳表現</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- item -->
+                <div class="swiper-slide slider-projects__slide d-flex-centered flex-column" data-slide-background="var(--color-dark-3)" data-slide-theme="light" data-slide-header-theme="light" data-slide-header-logo="secondary" data-arts-hover-class="hover-zoom-underline">
+                  <div class="w-100" data-swiper-parallax-opacity="0.1"><a class="slider-projects__wrapper-image" href="#" data-arts-hover="trigger" data-arts-cursor="true" data-arts-cursor-hide-native="true" data-arts-cursor-label="了解更多" data-arts-cursor-scale="2.4" data-arts-cursor-color="#fff" data-arts-cursor-background-color="#ed4830">
+                      <div class="hover-zoom__inner">
+                        <div class="mask-reveal overflow" data-swiper-parallax-x="-10%" data-arts-os-animation="true" data-arts-os-animation-name="animateMask" data-arts-os-animation-params="{direction: 'right'}">
+                          <div class="mask-reveal__layer mask-reveal__layer-1">
+                            <div class="mask-reveal__layer mask-reveal__layer-2">
+                              <div class="w-100 h-100" data-swiper-parallax="true" data-swiper-parallax-x="10%"><img class="swiper-lazy of-cover hover-zoom__zoom" src="#" data-src="img/assets/projects/project2/img-cover-2.jpg" width="1920" height="1280" alt=""/>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div></a>
+                    <div class="slider-projects__header" data-swiper-parallax-x="-10%">
+                      <h2 class="h3 slider__heading underline-hover__target js-arts-split-text arts-split-text my-0" data-arts-os-animation="true" data-arts-os-animation-name="animateText" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-set-direction="y" data-arts-split-text-set-distance="100%" data-arts-split-text-overflow-wrap="lines">人生課堂</h2>
+                      <div class="w-100"></div>
+                      <div class="d-inline-block slider__subheading js-arts-split-text arts-split-text pointer-events-auto mt-2" data-arts-os-animation="true" data-arts-os-animation-name="animateText" data-arts-split-text="lines,words" data-arts-split-text-set="words" data-arts-split-text-overflow-wrap="words">透過音樂深入討論人生議題，從歌聲中找到答案</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- item -->
+                <div class="swiper-slide slider-projects__slide d-flex-centered flex-column" data-slide-background="var(--color-portfolio-5)" data-slide-theme="" data-slide-header-theme="dark" data-slide-header-logo="primary" data-arts-hover-class="hover-zoom-underline">
+                  <div class="w-100" data-swiper-parallax-opacity="0.1"><a class="slider-projects__wrapper-image" href="#" data-arts-hover="trigger" data-arts-cursor="true" data-arts-cursor-hide-native="true" data-arts-cursor-label="了解更多" data-arts-cursor-scale="2.4" data-arts-cursor-color="#fff" data-arts-cursor-background-color="#ed4830">
+                      <div class="hover-zoom__inner">
+                        <div class="mask-reveal overflow" data-swiper-parallax-x="-10%" data-arts-os-animation="true" data-arts-os-animation-name="animateMask" data-arts-os-animation-params="{direction: 'right'}">
+                          <div class="mask-reveal__layer mask-reveal__layer-1">
+                            <div class="mask-reveal__layer mask-reveal__layer-2">
+                              <div class="w-100 h-100" data-swiper-parallax="true" data-swiper-parallax-x="10%"><img class="swiper-lazy of-cover hover-zoom__zoom" src="#" data-src="img/assets/projects/project5/img-cover-5.jpg" width="1920" height="1280" alt=""/>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div></a>
+                    <div class="slider-projects__header" data-swiper-parallax-x="-10%">
+                      <h2 class="h3 slider__heading underline-hover__target js-arts-split-text arts-split-text my-0" data-arts-os-animation="true" data-arts-os-animation-name="animateText" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-set-direction="y" data-arts-split-text-set-distance="100%" data-arts-split-text-overflow-wrap="lines">廟宇歌唱比賽</h2>
+                      <div class="w-100"></div>
+                      <div class="d-inline-block slider__subheading js-arts-split-text arts-split-text pointer-events-auto mt-2" data-arts-os-animation="true" data-arts-os-animation-name="animateText" data-arts-split-text="lines,words" data-arts-split-text-set="words" data-arts-split-text-overflow-wrap="words">結合25間廟宇舉辦歌唱比賽，體驗傳統文化的深度<br>資深藝人參與評審，分享專業經驗與人生故事</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- item -->
+                <div class="swiper-slide slider-projects__slide d-flex-centered flex-column" data-slide-background="var(--color-portfolio-9)" data-slide-theme="" data-slide-header-theme="dark" data-slide-header-logo="primary" data-arts-hover-class="hover-zoom-underline">
+                  <div class="w-100" data-swiper-parallax-opacity="0.1"><a class="slider-projects__wrapper-image" href="#" data-arts-hover="trigger" data-arts-cursor="true" data-arts-cursor-hide-native="true" data-arts-cursor-label="了解更多" data-arts-cursor-scale="2.4" data-arts-cursor-color="#fff" data-arts-cursor-background-color="#ed4830">
+                      <div class="hover-zoom__inner">
+                        <div class="mask-reveal overflow" data-swiper-parallax-x="-10%" data-arts-os-animation="true" data-arts-os-animation-name="animateMask" data-arts-os-animation-params="{direction: 'right'}">
+                          <div class="mask-reveal__layer mask-reveal__layer-1">
+                            <div class="mask-reveal__layer mask-reveal__layer-2">
+                              <div class="w-100 h-100" data-swiper-parallax="true" data-swiper-parallax-x="10%"><img class="swiper-lazy of-cover hover-zoom__zoom" src="#" data-src="img/assets/projects/project7/img-cover-7.jpg" width="1920" height="1280" alt=""/>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div></a>
+                    <div class="slider-projects__header" data-swiper-parallax-x="-10%">
+                      <h2 class="h3 slider__heading underline-hover__target js-arts-split-text arts-split-text my-0" data-arts-os-animation="true" data-arts-os-animation-name="animateText" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-set-direction="y" data-arts-split-text-set-distance="100%" data-arts-split-text-overflow-wrap="lines">學員故事</h2>
+                      <div class="w-100"></div>
+                      <div class="d-inline-block slider__subheading js-arts-split-text arts-split-text pointer-events-auto mt-2" data-arts-os-animation="true" data-arts-os-animation-name="animateText" data-arts-split-text="lines,words" data-arts-split-text-set="words" data-arts-split-text-overflow-wrap="words">讓歌聲改變人生，加入有所德的行列！</div>
+                      <div class="mt-3">
+                        <a href="#" class="button button_bordered bg-dark-1 text-light-1">立即報名</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="is-dragging__blocker"></div>
+            </div>
+          </section>
+          <!-- - section FEATURED PROJECTS SLIDER -->
+          <section class="section bg-light-1">
+            <!-- section HEADER -->
+            <section class="section section-content pt-large pb-xsmall">
+              <div class="section-content__content content js-arts-split-text arts-split-text container" data-arts-os-animation="true" data-arts-os-animation-name="animateText" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">
+                <h2 class="h2 mb-lg-0 mb-3">人生如歌</h2>
+              </div>
+            </section>
+            <!-- - section HEADER -->
+            <!-- section SERVICES -->
+            <section class="section section-services section-content pb-large">
+              <div class="container">
+                <div class="row g-sm-5 g-4">
+                  <div class="col-sm-6">
+                    <div class="mask-reveal w-100 h-100" data-arts-os-animation="true" data-arts-os-animation-name="animateMask" data-arts-os-animation-params="{direction: 'up', scale: 1}">
+                      <div class="mask-reveal__layer mask-reveal__layer-1">
+                        <div class="mask-reveal__layer mask-reveal__layer-2">
+                          <div class="card p-xsmall bg-light-3">
+                            <div class="card__header"><a class="d-flex justify-content-between align-items-center underline-hover" href="#">
+                                <h3 class="h3 my-0 underline-hover__target js-arts-split-text arts-split-text" data-arts-split-text="lines">基礎課程</h3><i class="card__arrow knz-arrow-right"></i></a></div>
+                            <div class="card__content content">
+                              <ul>
+                                <li>聲音保養與正確發聲技巧</li>
+                                <li>基本音準與節奏掌握</li>
+                              </ul>
+                            </div>
+                            <div class="card__counter small">01</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="mask-reveal w-100 h-100" data-arts-os-animation="true" data-arts-os-animation-name="animateMask" data-arts-os-animation-params="{direction: 'up', scale: 1}">
+                      <div class="mask-reveal__layer mask-reveal__layer-1">
+                        <div class="mask-reveal__layer mask-reveal__layer-2">
+                          <div class="card p-xsmall bg-light-3">
+                            <div class="card__header"><a class="d-flex justify-content-between align-items-center underline-hover" href="#">
+                                <h3 class="h3 my-0 underline-hover__target js-arts-split-text arts-split-text" data-arts-split-text="lines">進階課程</h3><i class="card__arrow knz-arrow-right"></i></a></div>
+                            <div class="card__content content">
+                              <ul>
+                                <li>情感表達與歌詞詮釋</li>
+                                <li>演唱經典歌曲</li>
+                                <li>廟會文化歌曲</li>
+                                <li>經典老歌演唱</li>
+                              </ul>
+                            </div>
+                            <div class="card__counter small">02</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="mask-reveal w-100 h-100" data-arts-os-animation="true" data-arts-os-animation-name="animateMask" data-arts-os-animation-params="{direction: 'up', scale: 1}">
+                      <div class="mask-reveal__layer mask-reveal__layer-1">
+                        <div class="mask-reveal__layer mask-reveal__layer-2">
+                          <div class="card p-xsmall bg-light-3">
+                            <div class="card__header"><a class="d-flex justify-content-between align-items-center underline-hover" href="#">
+                                <h3 class="h3 my-0 underline-hover__target js-arts-split-text arts-split-text" data-arts-split-text="lines">明星特別課程</h3><i class="card__arrow knz-arrow-right"></i></a></div>
+                            <div class="card__content content">
+                              <ul>
+                                <li>老明星演唱秘訣分享</li>
+                                <li>專屬課程內容錄製</li>
+                                <li>一對一指導</li>
+                              </ul>
+                            </div>
+                            <div class="card__counter small">03</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="mask-reveal w-100 h-100" data-arts-os-animation="true" data-arts-os-animation-name="animateMask" data-arts-os-animation-params="{direction: 'up', scale: 1}">
+                      <div class="mask-reveal__layer mask-reveal__layer-1">
+                        <div class="mask-reveal__layer mask-reveal__layer-2">
+                          <div class="card p-xsmall bg-light-3">
+                            <div class="card__header"><a class="d-flex justify-content-between align-items-center underline-hover" href="#">
+                                <h3 class="h3 my-0 underline-hover__target js-arts-split-text arts-split-text" data-arts-split-text="lines">延伸服務</h3><i class="card__arrow knz-arrow-right"></i></a></div>
+                            <div class="card__content content">
+                              <ul>
+                                <li>社交互動社群</li>
+                                <li>遺書撰寫指導</li>
+                                <li>人生故事分享</li>
+                                <li>健康管理建議</li>
+                              </ul>
+                            </div>
+                            <div class="card__counter small">04</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="section-content__wrapper-button mt-xsmall text-center" data-arts-os-animation="true" data-arts-os-animation-name="animateJump" data-arts-os-animation-params="{y: '33%', scaleY: 1.5}"><a class="button button-circle js-arts-cursor-no-highlight button_bordered bg-gray-1 button-circle_big" href="034-services.html#section-how" data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="current" data-arts-cursor-magnetic="data-arts-cursor-magnetic" data-arts-cursor-hide-native="true"><span class="button-circle__label button__label button__label-normal"><span class="button__title">了解更多</span><span class="button__icon button__icon_after knz-arrow-right"></span></span><span class="button-circle__label button__label button__label-hover"><span class="button__title">了解更多</span><span class="button__icon button__icon_after knz-arrow-right"></span></span></a>
+                </div>
+              </div>
+            </section>
+            <!-- - section SERVICES -->
+          </section>
+
+          <section class="section section-content pt-large pb-xsmall">
+            <div class="section-content__content content js-arts-split-text arts-split-text container" data-arts-os-animation="true" data-arts-os-animation-name="animateText" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">
+              <h2 class="h2 mb-lg-0 mb-3">賽程表</h2>
+            </div>
+          </section>
+          <!-- - section HEADER -->
+          <!-- section BLOG -->
+          <section class="section section-blog section-grid pb-large">
+            <!-- posts -->
+            <div class="list-backgrounds list-backgrounds_striped">
+              <div class="background-hover list-backgrounds__item py-medium">
+                <div class="background-hover__image list-backgrounds__wrapper-img"><img class="of-cover lazy-bg" src="#" data-src="img/assets/section/sectionBlog/post-1-1.jpg" width="1920" height="1280" alt=""/>
+                </div>
+                <div class="list-backgrounds__overlay background-hover__overlay overlay overlay_dark-60"></div>
+                <div class="container background-hover__content" data-arts-os-animation="true" data-arts-os-animation-name="animateText">
+                  <div class="row align-items-center">
+                    <div class="col-lg-4">
+                      <div class="h5 mt-md-1 mb-md-1 mb-2 js-arts-split-text arts-split-text" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">北部賽區</div>
+                    </div>
+                    <div class="col-lg-8"><a class="d-inline-block underline-hover js-arts-split-text arts-split-text" href="045-blog-single-post-fullscreen.html" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines" data-arts-cursor="true" data-arts-cursor-hide-native="true" data-arts-cursor-label="報名參加" data-arts-cursor-scale="2" data-arts-cursor-color="#fff" data-arts-cursor-background-color="#ed4830">
+                        <h2 class="h3 my-0 underline-hover__target">台北龍山寺、艋舺青山宮、台北行天宮、基隆慶安宮、新北淡水福佑宮、桃園大溪齋明寺</h2></a>
+                      <div class="arts-split-text js-arts-split-text" data-arts-split-text="lines, words" data-arts-split-text-set="words" data-arts-split-text-overflow-wrap="lines">
+                        <ul class="categories mt-2">
+                          <li><a href="#">預賽</a></li>
+                          <li><a href="#">2024/3/1-3/3</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="background-hover list-backgrounds__item py-medium">
+                <div class="background-hover__image list-backgrounds__wrapper-img"><img class="of-cover lazy-bg" src="#" data-src="img/assets/section/sectionBlog/post-3-1.jpg" width="1920" height="1280" alt=""/>
+                </div>
+                <div class="list-backgrounds__overlay background-hover__overlay overlay overlay_dark-60"></div>
+                <div class="container background-hover__content" data-arts-os-animation="true" data-arts-os-animation-name="animateText">
+                  <div class="row align-items-center">
+                    <div class="col-lg-4">
+                      <div class="h5 mt-md-1 mb-md-1 mb-2 js-arts-split-text arts-split-text" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">中部賽區</div>
+                    </div>
+                    <div class="col-lg-8"><a class="d-inline-block underline-hover js-arts-split-text arts-split-text" href="045-blog-single-post-fullscreen.html" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines" data-arts-cursor="true" data-arts-cursor-hide-native="true" data-arts-cursor-label="報名參加" data-arts-cursor-scale="2" data-arts-cursor-color="#fff" data-arts-cursor-background-color="#ed4830">
+                        <h2 class="h3 my-0 underline-hover__target">台中萬春宮、台中樂成宮、彰化南瑤宮、彰化天后宮、南投竹山紫南宮、雲林北港朝天宮</h2></a>
+                      <div class="arts-split-text js-arts-split-text" data-arts-split-text="lines, words" data-arts-split-text-set="words" data-arts-split-text-overflow-wrap="lines">
+                        <ul class="categories mt-2">
+                          <li><a href="#">預賽</a></li>
+                          <li><a href="#">2024/3/8-3/10</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="background-hover list-backgrounds__item py-medium">
+                <div class="background-hover__image list-backgrounds__wrapper-img"><img class="of-cover lazy-bg" src="#" data-src="img/assets/section/sectionBlog/post-4-1.jpg" width="1920" height="1280" alt=""/>
+                </div>
+                <div class="list-backgrounds__overlay background-hover__overlay overlay overlay_dark-60"></div>
+                <div class="container background-hover__content" data-arts-os-animation="true" data-arts-os-animation-name="animateText">
+                  <div class="row align-items-center">
+                    <div class="col-lg-4">
+                      <div class="h5 mt-md-1 mb-md-1 mb-2 js-arts-split-text arts-split-text" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">南部賽區</div>
+                    </div>
+                    <div class="col-lg-8"><a class="d-inline-block underline-hover js-arts-split-text arts-split-text" href="045-blog-single-post-fullscreen.html" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines" data-arts-cursor="true" data-arts-cursor-hide-native="true" data-arts-cursor-label="報名參加" data-arts-cursor-scale="2" data-arts-cursor-color="#fff" data-arts-cursor-background-color="#ed4830">
+                        <h2 class="h3 my-0 underline-hover__target">嘉義城隍廟、台南大天后宮、台南開基武廟、高雄左營元帝廟、高雄旗山天后宮、屏東東港東隆宮</h2></a>
+                      <div class="arts-split-text js-arts-split-text" data-arts-split-text="lines, words" data-arts-split-text-set="words" data-arts-split-text-overflow-wrap="lines">
+                        <ul class="categories mt-2">
+                          <li><a href="#">預賽</a></li>
+                          <li><a href="#">2024/3/15-3/17</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="background-hover list-backgrounds__item py-medium">
+                <div class="background-hover__image list-backgrounds__wrapper-img"><img class="of-cover lazy-bg" src="#" data-src="img/assets/section/sectionBlog/post-5-1.jpg" width="1920" height="1280" alt=""/>
+                </div>
+                <div class="list-backgrounds__overlay background-hover__overlay overlay overlay_dark-60"></div>
+                <div class="container background-hover__content" data-arts-os-animation="true" data-arts-os-animation-name="animateText">
+                  <div class="row align-items-center">
+                    <div class="col-lg-4">
+                      <div class="h5 mt-md-1 mb-md-1 mb-2 js-arts-split-text arts-split-text" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">東部賽區</div>
+                    </div>
+                    <div class="col-lg-8"><a class="d-inline-block underline-hover js-arts-split-text arts-split-text" href="045-blog-single-post-fullscreen.html" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines" data-arts-cursor="true" data-arts-cursor-hide-native="true" data-arts-cursor-label="報名參加" data-arts-cursor-scale="2" data-arts-cursor-color="#fff" data-arts-cursor-background-color="#ed4830">
+                        <h2 class="h3 my-0 underline-hover__target">宜蘭五結協天廟、花蓮慈惠堂、花蓮鳳林萬榮財神廟、台東天后宮、台東關山慈天宮、綠島朝日溫泉福德宮</h2></a>
+                      <div class="arts-split-text js-arts-split-text" data-arts-split-text="lines, words" data-arts-split-text-set="words" data-arts-split-text-overflow-wrap="lines">
+                        <ul class="categories mt-2">
+                          <li><a href="#">預賽</a></li>
+                          <li><a href="#">2024/3/22-3/24</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="background-hover list-backgrounds__item py-medium">
+                <div class="background-hover__image list-backgrounds__wrapper-img"><img class="of-cover lazy-bg" src="#" data-src="img/assets/section/sectionBlog/post-6-1.jpg" width="1920" height="1280" alt=""/>
+                </div>
+                <div class="list-backgrounds__overlay background-hover__overlay overlay overlay_dark-60"></div>
+                <div class="container background-hover__content" data-arts-os-animation="true" data-arts-os-animation-name="animateText">
+                  <div class="row align-items-center">
+                    <div class="col-lg-4">
+                      <div class="h5 mt-md-1 mb-md-1 mb-2 js-arts-split-text arts-split-text" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">總決賽</div>
+                    </div>
+                    <div class="col-lg-8"><a class="d-inline-block underline-hover js-arts-split-text arts-split-text" href="045-blog-single-post-fullscreen.html" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines" data-arts-cursor="true" data-arts-cursor-hide-native="true" data-arts-cursor-label="報名參加" data-arts-cursor-scale="2" data-arts-cursor-color="#fff" data-arts-cursor-background-color="#ed4830">
+                        <h2 class="h3 my-0 underline-hover__target">台北龍山寺 - 總決賽暨頒獎典禮</h2></a>
+                      <div class="arts-split-text js-arts-split-text" data-arts-split-text="lines, words" data-arts-split-text-set="words" data-arts-split-text-overflow-wrap="lines">
+                        <ul class="categories mt-2">
+                          <li><a href="#">決賽</a></li>
+                          <li><a href="#">2024/4/1</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- - posts -->
+            <div class="section-content__wrapper-button mt-xsmall text-center" data-arts-os-animation="true" data-arts-os-animation-name="animateJump" data-arts-os-animation-params="{y: '33%', scaleY: 1.5}"><a class="button button-circle js-arts-cursor-no-highlight button_bordered bg-gray-1 button-circle_big" href="037-blog-posts-list-backgrounds.html" data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="current" data-arts-cursor-magnetic="data-arts-cursor-magnetic" data-arts-cursor-hide-native="true"><span class="button-circle__label button__label button__label-normal"><span class="button__title">立即報名</span><span class="button__icon button__icon_after knz-arrow-right"></span></span><span class="button-circle__label button__label button__label-hover"><span class="button__title">立即報名</span><span class="button__icon button__icon_after knz-arrow-right"></span></span></a>
+            </div>
+          </section>
+          <!-- - section BLOG -->
+        </main>
+        <!-- - PAGE CONTENT -->
+        <!-- PAGE FOOTER -->
+        <footer class="footer pt-medium bg-dark-1" id="page-footer" data-arts-theme-text="light" data-arts-fixed-reveal="data-arts-fixed-reveal" data-arts-fixed-reveal-from="-20vh" data-arts-fixed-reveal-from-opacity="0">
+          <div class="footer__inner">
+            <div class="container">
+              <!-- widget area #1 [wide] -->
+              <div class="row pb-md-3">
+                <div class="col">
+                  <section class="widget widget_text">
+                    <div class="textwidget"><h3>有所得有限公司致力於打造以「唱歌課程」為核心的線上學習平台，幫助銀髮族找到人生新的舞台。<em>讓我們一起創造有意義的時光！</em><br><br><a class="underline-hover-self" href="#">service@yousd.com</a></h3></div>
+                  </section>
+                </div>
+              </div>
+              <!-- - widget area #1 [wide] -->
+              <!-- widget area #2 [4 columns] -->
+              <div class="row justify-content-between position-relative pt-md-5 pt-4 pb-md-3">
+                <div class="footer__divider"></div>
+                <div class="col-lg-3 col-sm-6">
+                  <section class="widget widget_nav_menu">
+                    <h2 class="widgettitle">快速連結</h2>
+                    <div>
+                      <ul class="menu">
+                        <li class="menu-item"><a href="index.html">首頁</a></li>
+                        <li class="menu-item"><a href="#">課程介紹</a></li>
+                        <li class="menu-item"><a href="#">廟宇活動</a></li>
+                        <li class="menu-item"><a href="#">關於我們</a></li>
+                        <li class="menu-item"><a href="#">最新消息</a></li>
+                        <li class="menu-item"><a href="#">聯絡我們</a></li>
+                      </ul>
+                    </div>
+                  </section>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <section class="widget widget_nav_menu">
+                    <h2 class="widgettitle">課程項目</h2>
+                    <div>
+                      <ul class="menu">
+                        <li class="menu-item"><a href="#">基礎發聲課程</a></li>
+                        <li class="menu-item"><a href="#">進階演唱技巧</a></li>
+                        <li class="menu-item"><a href="#">明星特別課程</a></li>
+                        <li class="menu-item"><a href="#">廟宇老歌特輯</a></li>
+                        <li class="menu-item"><a href="#">情感故事分享</a></li>
+                        <li class="menu-item"><a href="#">健康生活指南</a></li>
+                      </ul>
+                    </div>
+                  </section>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <section class="widget widget_text">
+                    <h2 class="widgettitle">公司地址</h2>
+                    <div class="textwidget"><p>台北市中正區<br>重慶南路一段122號<br>8樓之1</p></div>
+                  </section>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <section class="widget widget_text">
+                    <h2 class="widgettitle">聯絡資訊</h2>
+                    <div class="textwidget"><p><a href="#">service@yousd.com</a><br>02-2311-xxxx<br>0800-xxx-xxx</p></div>
+                  </section>
+                </div>
+              </div>
+              <!-- - widget area #2 [4 columns] -->
+              <!-- widget area #3 [2 columns] -->
+              <div class="row justify-content-between align-items-center position-relative pt-4">
+                <div class="footer__divider"></div>
+                <div class="col-lg-4 order-lg-2 text-lg-end text-center">
+                  <section class="widget widget_kinsey_social">
+                    <ul class="social">
+                      <li class="social__item"><a class="social__icon fa-fw fab fa-facebook-f" href="#"></a></li>
+                      <li class="social__item"><a class="social__icon fa-fw fab fa-line" href="#"></a></li>
+                      <li class="social__item"><a class="social__icon fa-fw fab fa-youtube" href="#"></a></li>
+                    </ul>
+                  </section>
+                </div>
+                <div class="col-lg-8 text-lg-start text-center">
+                  <section class="widget widget_text">
+                    <div class="textwidget"><p><small>© 2024 有所得有限公司版權所有</small></p></div>
+                  </section>
+                </div>
+              </div>
+              <!-- - widget area #3 [2 columns] -->
+            </div>
+          </div>
+        </footer>
+        <!-- - PAGE FOOTER -->
+      </div>
+      <!-- - PAGE MAIN CONTAINER -->
+    </div>
+    <canvas id="js-webgl"></canvas>
+    <!-- Cursor Follower -->
+    <div class="arts-cursor" id="js-arts-cursor">
+      <div class="arts-cursor__wrapper">
+        <!-- circles-->
+        <div class="arts-cursor__follower js-arts-cursor__follower">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <circle class="arts-cursor__stroke-inner js-arts-cursor__stroke-inner" cx="25" cy="25" r="24" style="opacity: 0.6;"></circle>
+            <circle class="arts-cursor__stroke-outer js-arts-cursor__stroke-outer" cx="25" cy="25" r="24" style="stroke-dashoffset: 252.327; stroke-dasharray: 0px, 999999px;"></circle>
+          </svg>
+        </div>
+        <!-- arrows-->
+        <div class="arts-cursor__arrows">
+          <div class="arts-cursor__arrow arts-cursor__arrow_up material-icons keyboard_arrow_up js-arts-cursor__arrow-up"></div>
+          <div class="arts-cursor__arrow arts-cursor__arrow_right material-icons keyboard_arrow_right js-arts-cursor__arrow-right"></div>
+          <div class="arts-cursor__arrow arts-cursor__arrow_down material-icons keyboard_arrow_down js-arts-cursor__arrow-down"></div>
+          <div class="arts-cursor__arrow arts-cursor__arrow_left material-icons keyboard_arrow_left js-arts-cursor__arrow-left"></div>
+        </div>
+        <!-- label holder-->
+        <div class="arts-cursor__wrapper-label">
+          <div class="arts-cursor__label js-arts-cursor__label"></div>
+        </div>
+        <!-- icon holder-->
+        <div class="arts-cursor__wrapper-icon">
+          <div class="arts-cursor__icon js-arts-cursor__icon"></div>
+        </div>
+      </div>
+    </div>
+    <!-- - Cursor Follower -->
+    <!-- Mobile Loading Spinner -->
+    <svg class="spinner d-lg-none" id="js-spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+      <circle class="spinner__path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+    </svg>
+    <!-- - Mobile Loading Spinner -->
+    <!-- Curtain AJAX Transition -->
+    <div class="transition-curtain" id="js-page-transition-curtain"></div>
+    <!-- - Curtain AJAX Transition -->
+    <!-- PhotoSwipe Lightbox Container -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true" data-arts-theme-text="light">
+      <!-- background -->
+      <div class="pswp__bg"></div>
+      <!-- - background -->
+      <!-- slider wrapper -->
+      <div class="pswp__scroll-wrap">
+        <!-- slides holder (don't modify)-->
+        <div class="pswp__container">
+          <div class="pswp__item">
+            <div class="pswp__img pswp__img--placeholder"></div>
+          </div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+        <!-- - slides holder (don't modify)-->
+        <!-- UI -->
+        <div class="pswp__ui pswp__ui--hidden">
+          <!-- top bar -->
+          <div class="pswp__top-bar">
+            <div class="pswp__counter"></div>
+            <button class="pswp__button pswp__button--close" title="Close (Esc)" data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.4" data-arts-cursor-magnetic="data-arts-cursor-magnetic" data-arts-cursor-hide-native="true"></button>
+            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen" data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.4" data-arts-cursor-magnetic="data-arts-cursor-magnetic" data-arts-cursor-hide-native="true"></button>
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- - top bar -->
+          <!-- left arrow -->
+          <div class="pswp__button pswp__button--arrow--left material-icons" data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.7" data-arts-cursor-magnetic="data-arts-cursor-magnetic" data-arts-cursor-hide-native="true">keyboard_arrow_left</div>
+          <!-- - left arrow -->
+          <!-- right arrow -->
+          <div class="pswp__button pswp__button--arrow--right material-icons" data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.7" data-arts-cursor-magnetic="data-arts-cursor-magnetic" data-arts-cursor-hide-native="true">keyboard_arrow_right</div>
+          <!-- - right arrow -->
+          <!-- slide caption holder (don't modify) -->
+          <div class="pswp__caption">
+            <div class="pswp__caption__center text-center"></div>
+          </div>
+          <!-- - slide caption holder (don't modify) -->
+        </div>
+        <!-- - UI -->
+      </div>
+      <!-- slider wrapper -->
+    </div>
+    <!-- - PhotoSwipe Lightbox Container -->
+    <!-- VENDOR SCRIPTS -->
+    <script src="js/vendor.js"></script>
+    <!-- - VENDOR SCRIPTS -->
+    <!-- COMPONENTS -->
+    <script src="js/components.js"></script>
+    <!-- - COMPONENTS -->
+  </body>
+</html>

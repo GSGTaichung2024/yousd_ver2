@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
 		setTimeout(() => {
 			window.kinsey.loading.finish();
-		}, 1200);
+		}, 200);
 	}
 
 });
